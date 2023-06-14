@@ -30,6 +30,7 @@ class StoreProductRequest extends FormRequest
             'image' => 'nullable',
             'gluten_free' => 'required|boolean',
             'vegan' => 'required|boolean',
+            'restaurant_id' => 'nullable|exists:restaurant,id',
         ];
     }
 }

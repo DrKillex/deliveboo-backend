@@ -18,6 +18,7 @@ class ProductSeeder extends Seeder
     public function run(Faker $faker)
     {
         for ($i = 0; $i < 50; $i++){
+            // $type = Restaurant::inRandomOrder()->first();
 
             $product = new Product();
             $product->name = $faker->word;
@@ -27,6 +28,7 @@ class ProductSeeder extends Seeder
             $product->gluten_free = $faker->numberBetween(0, 1);
             $product->vegan = $faker->numberBetween(0, 1);
             $product->slug = Str::slug($product->name, '-');
+            // $product->restaurant_id = $restaurant->id;
             $product->save();
         }
     }
