@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->varchar('name', 100);
+            $table->string('name', 100);
             $table->text('description')->nullable();
             $table->decimal('price', 4, 2);
-            $table->boolean('gluten_free');
-            $table->boolean('vegan');
+            $table->boolean('gluten_free')->default(false);
+            $table->boolean('vegan')->default(false);
             $table->string('slug');
             $table->timestamps();
         });
