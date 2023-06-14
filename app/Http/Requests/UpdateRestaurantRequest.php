@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateRestaurantRequest extends FormRequest
@@ -13,7 +14,7 @@ class UpdateRestaurantRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,7 +26,11 @@ class UpdateRestaurantRequest extends FormRequest
     {
         return [
             'user_id' => 'required|exists:users,id',
-            'name' => 'required|max:150',
+            'name' => [
+                'required',
+                Rule::unique('products')->ignore($this->product),
+                'max:150',
+            ],
             'address' => 'required|max:150',
             'telephone' => 'required|max:15',
             'email' => 'nullable|max:100',
