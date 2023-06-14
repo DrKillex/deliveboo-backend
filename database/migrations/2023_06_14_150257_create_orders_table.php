@@ -16,7 +16,15 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            
+
+            $table->string('name', 50);
+            $table->string('surname', 50);
+            $table->string('address', 150);
+            $table->string('email', 100);
+            $table->string('telephone',15);
+            $table->decimal('total_price', 6,2);
+            $table->boolean('payment_state')->default(false);
+
             $table->timestamps();
         });
     }
