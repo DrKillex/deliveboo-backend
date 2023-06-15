@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Restaurant;
 use Illuminate\Http\Request;
 
+use function PHPUnit\Framework\isEmpty;
+
 class RestaurantController extends Controller
 {
     public function index()
@@ -13,7 +15,7 @@ class RestaurantController extends Controller
         // $restaurants = Restaurant::all()->paginate(5);
         $restaurants = Restaurant::with('categories')->get();
 
-        if($restaurants){
+        if(count($restaurants)>0){
             return response()->json([
                 'success' => true,
                 'results' => $restaurants
@@ -33,7 +35,7 @@ class RestaurantController extends Controller
 
         $restaurants = Restaurant::where('slug', $slug)->with('categories', 'products')->get();
 
-        if($restaurants){
+        if(count($restaurants)>0){
             return response()->json([
                 'success' => true,
                 'results' => $restaurants
