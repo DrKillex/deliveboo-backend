@@ -30,6 +30,7 @@ class RestaurantController extends Controller
 
     public function show(string $slug)
     {
+
         $restaurants = Restaurant::where('slug', $slug)->with('categories', 'products')->get();
 
         if($restaurants){
@@ -43,6 +44,7 @@ class RestaurantController extends Controller
                 'results' => null
             ], 404);
         }
+
     }
 
 }
