@@ -17,6 +17,12 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+    public function restaurant()
+    {
+        return $this->hasOne(Restaurant::class);
+    }
+    
     protected $fillable = [
         'name',
         'email',

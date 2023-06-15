@@ -10,4 +10,8 @@ class Category extends Model
     use HasFactory;
 
     protected $guarded = ['slug'];
+    public function restaurants()
+    {
+        return $this->belongsToMany(Restaurant::class);
+    }
 }
