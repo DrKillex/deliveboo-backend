@@ -9,4 +9,12 @@ class Product extends Model
 {
     use HasFactory;
     protected $guarded = ['slug'];
+    public function restaurant()
+    {
+        return $this->belongsTo(Restaurant::class);
+    }
+    public function orders()
+    {
+        return $this->belongsToMany(Order::class, 'product_orders', 'product_id', 'order_id')->withPivot('quantity');
+    }
 }
