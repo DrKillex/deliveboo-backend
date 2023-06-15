@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Restaurant;
-use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
@@ -21,8 +20,7 @@ class RestaurantSeeder extends Seeder
         Restaurant::truncate();
         for($i = 0; $i < 10; $i++) {
             $newRestaurant = new Restaurant();
-            //$user = User::inRandomOrder()->first();
-            //$newRestaurant->user_id = $user->id;
+            $newRestaurant->user_id = $i;
             $newRestaurant->name = $faker->sentence(2);
             $newRestaurant->slug = Str::slug($newRestaurant->name);
             $newRestaurant->address = $faker->streetAddress();
