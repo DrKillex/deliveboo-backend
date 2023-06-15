@@ -33,6 +33,7 @@ class UpdateProductRequest extends FormRequest
             'description' => 'nullable',
             'price' => 'nullable',
             'image' => 'nullable|image',
+            'visible' => 'nullable',
             'gluten_free' => 'nullable',
             'vegan' => 'nullable',
             // 'restaurant_id' => 'nullable|exists:restaurant,id',

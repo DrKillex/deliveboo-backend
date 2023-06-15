@@ -28,6 +28,7 @@ class StoreProductRequest extends FormRequest
             'description' => 'nullable',
             'price' => 'required',
             'image' => 'nullable',
+            'visible' => 'required|boolean',
             'gluten_free' => 'required|boolean',
             'vegan' => 'required|boolean',
             // 'restaurant_id' => 'nullable|exists:restaurant,id',
