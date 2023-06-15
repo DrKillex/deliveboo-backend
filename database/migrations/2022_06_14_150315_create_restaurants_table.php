@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('name', 150)->unique();
             $table->string('slug');
             $table->string('address', 150);
-            $table->string('telephone', 15);
+            $table->string('telephone', 30);
             $table->string('email', 100)->nullable();
             $table->string('p_iva', 11);
             $table->text('description')->nullable();

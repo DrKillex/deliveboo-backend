@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('order_product', function (Blueprint $table) {
-            // $table->id();
+            //$table->id();
 
             // se viene eliminato un order vengono eliminate anche tutte le righe dove presente order_id
             $table->foreignId('order_id')->constrained()->cascadeOnDelete();
