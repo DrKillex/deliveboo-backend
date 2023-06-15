@@ -11,24 +11,38 @@ class RestaurantController extends Controller
     public function index()
     {
         // $restaurants = Restaurant::all()->paginate(5);
-        $restaurants = Restaurant::with('category')->get();
+        $restaurants = Restaurant::with('categories')->get();
 
-        return response()->json([
-            'success' => true,
-            'results' => $restaurants
-        ]);
+        if($restaurants){
+            return response()->json([
+                'success' => true,
+                'results' => $restaurants
+            ]);
+        } else {
+            return response()->json([
+                'success' => false,
+                'results' => null
+            ], 404);
+        }
 
 
     }
 
     public function show(string $slug)
     {
-        $restaurant = Restaurant::where('slug', $slug)->with('category', 'products')->get();
+        $restaurants = Restaurant::where('slug', $slug)->with('categories', 'products')->get();
 
-        return response()->json([
-            'success' => true,
-            'results' => $restaurant
-        ]);
+        if($restaurants){
+            return response()->json([
+                'success' => true,
+                'results' => $restaurants
+            ]);
+        } else {
+            return response()->json([
+                'success' => false,
+                'results' => null
+            ], 404);
+        }
     }
 
 }
