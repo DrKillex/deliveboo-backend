@@ -9,6 +9,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Schema;
 
 class ProductSeeder extends Seeder
 {
@@ -19,9 +20,12 @@ class ProductSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        for ($i = 0; $i < 50; $i++){
+        Schema::disableForeignKeyConstraints();
+        Product::truncate();
+        Schema::enableForeignKeyConstraints();
+        for ($i = 0; $i < 500; $i++){
             $restaurant = Restaurant::inRandomOrder()->first();
-            $order = Order::inRandomOrder()->first();
+            //$order = Order::inRandomOrder()->first();
             $product = new Product();
             $product->name = $faker->word;
             $product->description = $faker->text(100);
@@ -33,7 +37,7 @@ class ProductSeeder extends Seeder
             $product->slug = Str::slug($product->name, '-');
             $product->restaurant_id = $restaurant->id;
             $product->save();
-            $product->orders()->attach($order, ['quantity' => 5]);
+            //$product->orders()->attach($order->id, ['quantity' => 5]);
         }
     }
 }

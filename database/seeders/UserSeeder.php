@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Schema;
 
 
 
@@ -21,6 +22,9 @@ class UserSeeder extends Seeder
 
     public function run(Faker $faker)
     {
+        Schema::disableForeignKeyConstraints();
+        User::truncate();
+        Schema::enableForeignKeyConstraints();
         for ($i = 0; $i < 10; $i++) {
             $users = new User();
             $users->name = $faker->name();
