@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
-    protected $guarded = ['slug'];
+    protected $guarded = ['slug', 'img'];
     public function restaurant()
     {
         return $this->belongsTo(Restaurant::class);
