@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreRestaurantRequest;
 use App\Models\Restaurant;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 use function PHPUnit\Framework\isEmpty;
 
@@ -46,7 +48,15 @@ class RestaurantController extends Controller
                 'results' => null
             ], 404);
         }
-
     }
-
+    public function store(StoreRestaurantRequest $request){
+        // validazione
+        $data = $request->validated();
+        //salvataggio
+        $newRestaurant = new Restaurant();
+        $newRestaurant->slug = Str::slug($data['name']);
+        $newRestaurant->fill($data);
+        $newRestaurant->save(); 
+        return $newRestaurant;
+    }
 }
