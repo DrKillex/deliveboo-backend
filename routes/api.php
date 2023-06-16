@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\ProductController;
+// use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\RestaurantController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -24,6 +24,6 @@ Route::get('restaurants', [RestaurantController::class, 'index']);
 Route::get('restaurants/{slug}', [RestaurantController::class, 'show']);
 Route::post('restaurants', [RestaurantController::class, 'store']);
 
-Route::get('products', [ProductController::class, 'index']);
-Route::get('products/{slug}', [ProductController::class, 'show']);
-Route::get('products', [ProductController::class, 'edit']);
+// Route::get('products', [ProductController::class, 'index']);
+// Route::get('products/{slug}', [ProductController::class, 'show']);
+// Route::get('products', [ProductController::class, 'edit']);
