@@ -3,7 +3,13 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreRestaurantRequest;
+use App\Http\Requests\UpdateRestaurantRequest;
+use App\Models\Category;
+use App\Models\Restaurant;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class RestaurantController extends Controller
 {
@@ -14,7 +20,7 @@ class RestaurantController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.restaurant.index');
     }
 
     /**
@@ -24,7 +30,8 @@ class RestaurantController extends Controller
      */
     public function create()
     {
-        //
+        $categories=Category::all();
+        return view('admin.restaurant.create', compact('categories'));
     }
 
     /**
@@ -33,9 +40,20 @@ class RestaurantController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreRestaurantRequest $request)
     {
-        //
+        $data = $request->validated();
+        $newRestaurant = new Restaurant();
+        $newRestaurant->slug = Str::slug($data['name']);
+        if (isset($data['img'])) {
+            $newRestaurant->img = Storage::put('uploads', $data['img']);
+        }
+        $newRestaurant->fill($data);
+        $newRestaurant->save();
+        if(isset($data['categories'])){
+            $newRestaurant->technologies()->sync($data['categories']);
+        }
+        return redirect()->route('admin.restaurant.show', $newRestaurant);
     }
 
     /**
@@ -44,9 +62,9 @@ class RestaurantController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Restaurant $restaurant)
     {
-        //
+        return view('admin.restaurant.show', compact('restaurant'));
     }
 
     /**
@@ -55,9 +73,10 @@ class RestaurantController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Restaurant $restaurant)
     {
-        //
+        $categories=Category::all();
+        return view('admin.restaurant.edit', compact('categories'));
     }
 
     /**
@@ -67,9 +86,20 @@ class RestaurantController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateRestaurantRequest $request, Restaurant $restaurant)
     {
-        //
+        $data = $request->validated();
+        $restaurant->slug = Str::slug($data['name']);
+        if (isset($data['img'])) {
+            if($restaurant->img){
+                Storage::delete($restaurant->img);
+            }
+            $restaurant->img = Storage::put('uploads', $data['img']);
+        }        
+        $categories = isset($data['categories']) ? $data['categories'] : [];
+        $restaurant->technologies()->sync($categories);
+        $restaurant->update($data);
+        return view('admin.restaurant.show', compact('restaurant'));
     }
 
     /**
@@ -78,8 +108,12 @@ class RestaurantController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Restaurant $restaurant)
     {
-        //
+        $restaurant->delete();
+        if($restaurant->img){
+            Storage::delete($restaurant->img);
+        }
+        return to_route('admin.restaurant.index');
     }
 }
