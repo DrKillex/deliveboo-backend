@@ -42,6 +42,7 @@ class RestaurantController extends Controller
      */
     public function store(StoreRestaurantRequest $request)
     {
+        $user_id = auth()->user()->id;
         $data = $request->validated();
         $newRestaurant = new Restaurant();
         $newRestaurant->slug = Str::slug($data['name']);
@@ -51,7 +52,8 @@ class RestaurantController extends Controller
         $newRestaurant->fill($data);
         $newRestaurant->save();
         if(isset($data['categories'])){
-            $newRestaurant->technologies()->sync($data['categories']);
+            $newRestaurant->categories()->sync($data['categories']);
+            $newRestaurant->user()->sync($user_id);
         }
         return redirect()->route('admin.restaurant.show', $newRestaurant);
     }
