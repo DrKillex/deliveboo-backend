@@ -27,17 +27,17 @@ class UpdateRestaurantRequest extends FormRequest
         return [
             'user_id' => 'required|exists:users,id',
             'name' => [
-                'required',
+                'nullable',
                 Rule::unique('products')->ignore($this->product),
                 'max:150',
             ],
-            'address' => 'required|max:150',
-            'telephone' => 'required|max:15',
-            'email' => 'nullable|max:100',
-            'p_iva' => 'required|max:11',
+            'address' => 'nullable|max:150|string',
+            'telephone' => 'nullable|max:30|string',
+            'email' => 'nullable|max:100|email|string',
+            'p_iva' => 'nullable|max:11|string',
             'description' => 'nullable',
-            'opening_hours' => 'required',
-            'img' => 'required|image|max:2048'
+            'opening_hours' => 'nullable',
+            'img' => 'nullable|image|max:2048|mimes:jpeg,jpg,png,gif'
         ];
     }
 }
