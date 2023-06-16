@@ -12,7 +12,7 @@
     @endif
     <div class="container">
         <div class="row">
-            <form action="{{ route('admin.restaurant.store') }}" method="POST" enctype="multipart/form-data"
+            <form action="{{ route('admin.restaurants.store') }}" method="POST" enctype="multipart/form-data"
                 class="form-input-image">
                 @csrf
                 <div class="mb-3">

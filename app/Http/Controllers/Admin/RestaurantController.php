@@ -20,7 +20,7 @@ class RestaurantController extends Controller
      */
     public function index()
     {
-        return view('admin.restaurant.index');
+        // return view('admin.restaurants.index');
     }
 
     /**
@@ -31,7 +31,7 @@ class RestaurantController extends Controller
     public function create()
     {
         $categories=Category::all();
-        return view('admin.restaurant.create', compact('categories'));
+        return view('admin.restaurants.create', compact('categories'));
     }
 
     /**
@@ -55,7 +55,7 @@ class RestaurantController extends Controller
             $newRestaurant->categories()->sync($data['categories']);
             $newRestaurant->user()->sync($user_id);
         }
-        return redirect()->route('admin.restaurant.show', $newRestaurant);
+        return redirect()->route('admin.restaurants.show', $newRestaurant);
     }
 
     /**
@@ -66,7 +66,7 @@ class RestaurantController extends Controller
      */
     public function show(Restaurant $restaurant)
     {
-        return view('admin.restaurant.show', compact('restaurant'));
+        return view('admin.restaurants.show', compact('restaurant'));
     }
 
     /**
@@ -78,7 +78,7 @@ class RestaurantController extends Controller
     public function edit(Restaurant $restaurant)
     {
         $categories=Category::all();
-        return view('admin.restaurant.edit', compact('categories'));
+        return view('admin.restaurants.edit', compact('categories'));
     }
 
     /**
@@ -101,7 +101,7 @@ class RestaurantController extends Controller
         $categories = isset($data['categories']) ? $data['categories'] : [];
         $restaurant->technologies()->sync($categories);
         $restaurant->update($data);
-        return view('admin.restaurant.show', compact('restaurant'));
+        return view('admin.restaurants.show', compact('restaurant'));
     }
 
     /**
@@ -116,6 +116,6 @@ class RestaurantController extends Controller
         if($restaurant->img){
             Storage::delete($restaurant->img);
         }
-        return to_route('admin.restaurant.index');
+        return to_route('admin.restaurants.index');
     }
 }
