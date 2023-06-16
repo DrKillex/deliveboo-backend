@@ -52,11 +52,6 @@
                         <label for="img" class="form-label">Immagine ristorante:</label>
                         <input class="form-control" type="file" id="img" name="img" ">
                     </div> -->
-                <div class="mb-3">
-                    <label for="user_id" class="form-label">User id:</label>
-                    <input type="number" class="form-control" id="user_id" name="user_id"
-                        placeholder="Inserisci user id">
-                </div>
                 <button class="btn btn-primary">Aggiungi</button>
             </form>
         </div>
