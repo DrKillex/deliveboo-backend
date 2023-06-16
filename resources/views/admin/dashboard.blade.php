@@ -18,10 +18,10 @@
                         
                         @if ($restaurant)
                             @foreach ($restaurant as $res)
-                                <div>{{$res->name}}</div>
+                                <div><a href="{{ route('admin.restaurants.show', $res) }}">{{$res->name}}</a></div>
                             @endforeach
                         @else
-                            <div>attaccati</div>
+                            <div><a class="nav-link" href="{{ route('admin.restaurants.create') }}">{{ __('Nuovo Ristorante') }}</a></div>
                         @endif
 
                 
