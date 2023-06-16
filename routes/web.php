@@ -27,7 +27,7 @@ Route::get('/', function () {
 //     return view('admin.dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
+Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('restaurants', RestaurantController::class)->parameters(['restaurants'=>'restaurant:slug']);
     Route::resource('products', ProductController::class)->parameters(['products'=>'product:slug']);

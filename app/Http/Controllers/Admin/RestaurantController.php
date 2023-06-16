@@ -20,7 +20,9 @@ class RestaurantController extends Controller
      */
     public function index()
     {
-        // return view('admin.restaurants.index');
+        // $user_id = auth()->user()->id;
+        // $restaurant = Restaurant::where('user_id', $user_id)->get();
+        // return view('admin.restaurants.show', compact('restaurant'));
     }
 
     /**
@@ -31,7 +33,12 @@ class RestaurantController extends Controller
     public function create()
     {
         $categories=Category::all();
-        return view('admin.restaurants.create', compact('categories'));
+        $user_id = auth()->user()->id;
+        $restaurant = Restaurant::where('user_id', $user_id)->get();
+        if (count($restaurant)==0){
+            $restaurant=[];
+        };
+        return view('admin.restaurants.create', compact('categories', 'restaurant'));
     }
 
     /**
@@ -55,7 +62,7 @@ class RestaurantController extends Controller
         if(isset($data['categories'])){
             $newRestaurant->categories()->sync($data['categories']);
         }
-        return redirect()->route('admin.restaurants.show', $newRestaurant);
+        return redirect()->route('admin.dashboard');
     }
 
     /**
