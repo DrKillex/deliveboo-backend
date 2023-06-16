@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreRestaurantRequest;
 use App\Models\Restaurant;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 
@@ -53,11 +54,15 @@ class RestaurantController extends Controller
     public function store(StoreRestaurantRequest $request){
         // validazione
         $data = $request->validated();
+        $file = $request->file('img');
         //salvataggio
         $newRestaurant = new Restaurant();
         $newRestaurant->slug = Str::slug($data['name']);
+        if (isset($file)) {
+            $newRestaurant->img = Storage::put('uploads', $file);
+        }
         $newRestaurant->fill($data);
         $newRestaurant->save(); 
-        return $newRestaurant;
+        return $data;
     }
 }
