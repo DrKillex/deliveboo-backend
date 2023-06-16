@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\RestaurantController;
 use App\Http\Controllers\ProfileController;
@@ -22,12 +23,12 @@ Route::get('/', function () {
 
 
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('admin.dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->name('admin.')->prefix('admin')->group(function () {
-    // Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('restaurants', RestaurantController::class)->parameters(['restaurants'=>'restaurant:slug']);
     Route::resource('products', ProductController::class)->parameters(['products'=>'product:slug']);
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

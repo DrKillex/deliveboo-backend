@@ -46,6 +46,7 @@ class RestaurantController extends Controller
         $data = $request->validated();
         $newRestaurant = new Restaurant();
         $newRestaurant->slug = Str::slug($data['name']);
+        $newRestaurant->user_id =$user_id;
         if (isset($data['img'])) {
             $newRestaurant->img = Storage::put('uploads', $data['img']);
         }
@@ -53,7 +54,6 @@ class RestaurantController extends Controller
         $newRestaurant->save();
         if(isset($data['categories'])){
             $newRestaurant->categories()->sync($data['categories']);
-            $newRestaurant->user()->sync($user_id);
         }
         return redirect()->route('admin.restaurants.show', $newRestaurant);
     }
