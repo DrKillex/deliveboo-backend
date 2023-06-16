@@ -13,8 +13,18 @@
                         {{ session('status') }}
                     </div>
                     @endif
-
                     {{ __('You are logged in!') }}
+
+                        
+                        @if ($restaurant)
+                            @foreach ($restaurant as $res)
+                                <div>{{$res->name}}</div>
+                            @endforeach
+                        @else
+                            <div>attaccati</div>
+                        @endif
+
+                
                 </div>
             </div>
         </div>

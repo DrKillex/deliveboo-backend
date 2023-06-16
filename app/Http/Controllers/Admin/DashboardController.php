@@ -10,10 +10,10 @@ class DashboardController extends Controller
 {
     public function index(){
         $user_id = auth()->user()->id;
-        $restaurant = Restaurant::where('user_id', $user_id);
-        if (isset($restaurant)){
+        $restaurant = Restaurant::where('user_id', $user_id)->get();
+        if (count($restaurant)==0){
             $restaurant=[];
         };
-        return view('admin.dashboard',compact($restaurant));
+        return view('admin.dashboard',compact('restaurant'));
     }
 }
