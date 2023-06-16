@@ -1,70 +1,84 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
-use App\Models\Product;
-use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-use function PHPUnit\Framework\isEmpty;
+
+use App\Models\Product;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
-
+    // Index
     public function index()
     {
-         $products = Product::with('restaurants')->paginate(50);
-
-             return response()->json([
-                 'success' => true,
-                 'results' => $products
-             ]);
+        $products = Product::all();
+        // prendiamo il file index dentro la cartella admin->products usando la dot notation
+        return view('admin.products.index', compact('products'));
     }
 
-    public function show(string $slug)
+    // Create
+    public function create()
     {
-        $products = Product::where('slug', $slug)->with('restaurants')->get();
-
-            return response()->json([
-                'success' => true,
-                'results' => $products
-            ]);
+        return view('admin.products.create');
     }
 
+    // Store
     public function store(StoreProductRequest $request)
     {
         $data = $request->validated();
-        $newProduct = new Product();
-        $newProduct->slug =  Str::slug($data['name']);
-        $newProduct->fill($data);
-        $newProduct->save(); 
-        return $newProduct;
+        $product = new Product();
+        $product->slug =  Str::slug($data['name']);
+        $product->fill($data);
+        // immagine
+        $product->slug =  Str::slug($data['name']);
+        if (isset($data['image'])) {
+            $product->image = Storage::put('uploads', $data['image']);
+        }
+        // immagine
+        $product->save(); 
+        return redirect()->route('admin.products.index')->with('message', 'Nuovo prodotto aggiunto');
     }
 
-    public function edit(string $slug)
+    // Show
+    public function show(Product $product)
     {
-        $products = Product::where('slug', $slug)->with('restaurants')->get();
-
-        return response()->json([
-            'success' => true,
-            'results' => $products
-        ]);
+        return view('admin.products.show', compact('product'));
     }
 
+    // Edit
+    public function edit(Product $product)
+    {
+        return view('admin.products.edit', compact('product'));
+    }
+
+    // Update
     public function update(UpdateProductRequest $request, Product $product){
         $data = $request->validated();
         $product->slug =  Str::slug($data['name']);
+        // immagine
+        if (isset($data['image'])) {
+            $product->image = Storage::put('uploads', $data['image']);
+        }
+        // immagine
         $product->update($data);
-        return $product;
+        return redirect()->route('admin.products.index')->with('message', "Il $product->id prodotto è stato modificato con successo");
     }
 
+    // Destroy
     public function destroy(Product $product)
     {
         $old_id = $product->id;
+        // immagine
+        if($product->image){
+            Storage::delete($product->image);
+        }
         $product->delete();
-
+        // immagine
+        return redirect()->route('admin.products.index')->with('message', "Il $old_id Prodotto è stato rimosso");
     }
 }
