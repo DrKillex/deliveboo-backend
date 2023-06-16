@@ -1,18 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- @if ($restaurant)
+    @if ($restaurant)
         <h1>hai gia un ristorante</h1>
-    @else --}}
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+    @else
+
+    {{-- errors --}}
+    @include('partials.errors')
+    {{-- /errors --}}
+    
         <div class="container">
             <div class="row">
                 <form action="{{ route('admin.restaurants.store') }}" method="POST" enctype="multipart/form-data"
@@ -66,5 +62,5 @@
                     </form>
                 </div>
             </div>
-         {{-- @endif --}}
+         @endif
 @endsection
