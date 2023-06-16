@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('p_iva', 11);
             $table->text('description')->nullable();
             $table->text('opening_hours');
-            $table->text('img')->nullable();
+            $table->text('img');
             $table->timestamps();
         });
     }

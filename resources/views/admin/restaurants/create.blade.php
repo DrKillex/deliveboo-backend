@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    @if ($restaurant)
+    {{-- @if ($restaurant)
         <h1>hai gia un ristorante</h1>
-    @else
+    @else --}}
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -23,6 +23,12 @@
                         <input type="text" class="form-control" id="name" name="name"
                             placeholder="Inserisci nome ristorante">
                     </div>
+                    @foreach ($categories as $category)
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="category" value="{{ $category->id }}" name="categories[]" {{ in_array($category->id, old('categories', [])) ? 'checked' : '' }}>
+                            <label class="form-check-label" for="category">{{ $category->name }}</label>
+                        </div>
+                    @endforeach
                     <div class="mb-3">
                         <label for="address" class="form-label">Indirizzo ristorante:</label>
                         <input type="text" class="form-control" id="address" name="address"
@@ -52,13 +58,13 @@
                         <input type="text" class="form-control" id="opening_hours" name="opening_hours"
                             placeholder="Inserisci orario d'apertura">
                     </div>
-                    <!-- <div class="mb-3">
-                    <label for="img" class="form-label">Immagine ristorante:</label>
-                    <input class="form-control" type="file" id="img" name="img" ">
-                </div> -->
-                    <button class="btn btn-primary">Aggiungi</button>
-                </form>
+                    <div class="mb-3">
+                        <label for="img" class="form-label">Immagine ristorante:</label>
+                        <input class="form-control" type="file" id="img" name="img">
+                    </div>
+                        <button class="btn btn-primary">Aggiungi</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    @endif
+         {{-- @endif --}}
 @endsection

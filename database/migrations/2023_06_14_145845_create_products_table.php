@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('name', 100);
             $table->text('description')->nullable();
             $table->decimal('price', 4, 2);
-            $table->text('image')->nullable();
+            $table->text('image');
             $table->boolean('visible')->default(false);
             $table->boolean('gluten_free')->default(false);
             $table->boolean('vegan')->default(false);

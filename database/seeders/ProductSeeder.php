@@ -23,7 +23,7 @@ class ProductSeeder extends Seeder
         Schema::disableForeignKeyConstraints();
         Product::truncate();
         Schema::enableForeignKeyConstraints();
-        for ($i = 0; $i < 500; $i++){
+        for ($i = 0; $i < 10; $i++){
             $restaurant = Restaurant::inRandomOrder()->first();
             //$order = Order::inRandomOrder()->first();
             $product = new Product();

@@ -9,6 +9,7 @@ use Illuminate\Support\Str;
 
 
 use App\Models\Product;
+use App\Models\Restaurant;
 use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
@@ -30,18 +31,30 @@ class ProductController extends Controller
     // Store
     public function store(StoreProductRequest $request)
     {
+        $restaurant_id = auth()->user()->restaurant->id;
+        $restaurant = Restaurant::where('id', $restaurant_id)->get();
+        $restaurant = $restaurant[0]->slug;
         $data = $request->validated();
         $product = new Product();
         $product->slug =  Str::slug($data['name']);
+        $product->restaurant_id = $restaurant_id;
         $product->fill($data);
         // immagine
         $product->slug =  Str::slug($data['name']);
         if (isset($data['image'])) {
             $product->image = Storage::put('uploads', $data['image']);
         }
-        // immagine
+        if (!isset($data['vegan'])) {
+            $product->vegan = 0;
+        }
+        if (!isset($data['gluten_free'])) {
+            $product->gluten_free = 0;
+        }
+        if (!isset($data['visible'])) {
+            $product->visible = 0;
+        }
         $product->save(); 
-        return redirect()->route('admin.products.index')->with('message', 'Nuovo prodotto aggiunto');
+        return redirect()->route('admin.restaurants.show', compact('restaurant'))->with('message', 'Nuovo prodotto aggiunto');
     }
 
     // Show
@@ -58,15 +71,21 @@ class ProductController extends Controller
 
     // Update
     public function update(UpdateProductRequest $request, Product $product){
+        $restaurant_id = auth()->user()->restaurant->id;
+        $restaurant = Restaurant::where('id', $restaurant_id)->get();
+        $restaurant = $restaurant[0]->slug;
         $data = $request->validated();
         $product->slug =  Str::slug($data['name']);
         // immagine
         if (isset($data['image'])) {
+            if($product->image){
+                Storage::delete($product->image);
+            }
             $product->image = Storage::put('uploads', $data['image']);
         }
         // immagine
         $product->update($data);
-        return redirect()->route('admin.products.index')->with('message', "Il $product->id prodotto è stato modificato con successo");
+        return redirect()->route('admin.restaurants.show', compact('restaurant'))->with('message', 'Nuovo prodotto aggiunto');
     }
 
     // Destroy

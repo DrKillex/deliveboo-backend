@@ -27,11 +27,10 @@ class StoreProductRequest extends FormRequest
             'name' => 'required|string|max:100',
             'description' => 'nullable',
             'price' => 'required',
-            // 'image' => 'nullable',
-            'visible' => 'required|boolean',
-            'gluten_free' => 'required|boolean',
-            'vegan' => 'required|boolean',
-            // 'restaurant_id' => 'nullable|exists:restaurant,id',
+            'image' => 'nullable',
+            'visible' => 'nullable|boolean',
+            'gluten_free' => 'nullable|boolean',
+            'vegan' => 'nullable|boolean',
         ];
     }
 }

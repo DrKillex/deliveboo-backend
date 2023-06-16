@@ -2,15 +2,16 @@
 
 @section('content')
     <div class="container">
+        <a href="{{route('admin.products.edit', $product)}}">edit</a>
         <ul class="list-unstyled">
             <li>
-                <h2>title: {{ $restaurant->name }}</h2>
+                <h2>title: {{ $product->name }}</h2>
             </li>
-            <li>
+            {{-- <li>
                 @foreach ($restaurant->products as $product)
-                    <div><a href="{{route('admin.products.show', $product)}}">{{$product->name}}</a></div>
+                    <div><a href="{{route('admin.product.show', $product)}}">{{$product->name}}</a></div>
                 @endforeach
-            </li>
+            </li> --}}
             {{-- <!-- <li>
                 <h3>type: <a href="@if ($record->type) {{ route('admin.types.show', $record->type) }} @endif">{{ $record->type?->name ?: 'Nessuna tipologia' }}</a></h3>
             </li> -->
