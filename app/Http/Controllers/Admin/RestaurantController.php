@@ -108,7 +108,7 @@ class RestaurantController extends Controller
             $data['img'] = Storage::put('uploads', $data['img']);
         }        
         $categories = isset($data['categories']) ? $data['categories'] : [];
-        $restaurant->technologies()->sync($categories);
+        $restaurant->categories()->sync($categories);
         $restaurant->update($data);
         return view('admin.restaurants.show', compact('restaurant'));
     }
