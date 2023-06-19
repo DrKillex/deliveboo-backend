@@ -10,6 +10,10 @@ import * as bootstrap from 'bootstrap';
 window.Alpine = Alpine;
 
 Alpine.start();
+if (document.querySelector('.form-input-image')) {
+    const imageInput = document.querySelector('#image');
+    imageInput.addEventListener('change', showPreviewProduct);
+}
 
 // show preview upload image function Product
 function showPreviewProduct(event) {
@@ -20,8 +24,7 @@ function showPreviewProduct(event) {
         preview.style.display = "block";
     }
 }
-const imageInput = document.querySelector('#image');
-imageInput.addEventListener('change', showPreviewProduct);
+
 
 // Condizione per Checkbox show Image Upload
 // if (document.querySelector('.form-input-image')) {

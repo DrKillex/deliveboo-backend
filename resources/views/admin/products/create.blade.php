@@ -18,7 +18,7 @@
 <div class="container">
     <h1>Inserisci i dati</h1>
 
-    <form action="{{ route('admin.products.store')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('admin.products.store')}}" method="POST" enctype="multipart/form-data" class="form-input-image">
         @csrf
         <div class="mb-3">
             <label for="name" class="form-label">Nome prodotto</label>
@@ -30,7 +30,7 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Prezzo</label>
-            <input type="number" name="price" class="form-control" id="price" value="{{ old('price')}}">
+            <input type="number" name="price" class="form-control" id="price" value="{{ old('price')}}" step="0.01" min="0.00">
         </div>
         <div class="mb-3">
             <label for="image" class="form-label">Immagine</label>

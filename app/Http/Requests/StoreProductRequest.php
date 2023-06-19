@@ -26,7 +26,7 @@ class StoreProductRequest extends FormRequest
         return [
             'name' => 'required|string|max:100',
             'description' => 'nullable|string',
-            'price' => 'required|numeric|decimal:2',
+            'price' => 'required|numeric|decimal:0,2|min:0',
             'image' => 'required|image|max:2048|mimes:jpeg,jpg,png,gif',
             'visible' => 'nullable|boolean',
             'gluten_free' => 'nullable|boolean',

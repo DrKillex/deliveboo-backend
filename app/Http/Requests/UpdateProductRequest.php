@@ -26,7 +26,7 @@ class UpdateProductRequest extends FormRequest
         return [
             'name' => 'nullable|string|max:100',
             'description' => 'nullable|string',
-            'price' => 'nullable|numeric|decimal:2',
+            'price' => 'nullable|numeric|decimal:0,2|min:0',
             'image' => 'nullable|image|max:2048|mimes:jpeg,jpg,png,gif',
             'visible' => 'nullable|boolean',
             'gluten_free' => 'nullable|boolean',

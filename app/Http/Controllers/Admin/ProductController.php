@@ -91,6 +91,9 @@ class ProductController extends Controller
     // Destroy
     public function destroy(Product $product)
     {
+        $restaurant_id = auth()->user()->restaurant->id;
+        $restaurant = Restaurant::where('id', $restaurant_id)->get();
+        $restaurant = $restaurant[0]->slug;
         $old_id = $product->id;
         // immagine
         if($product->image){
@@ -98,6 +101,6 @@ class ProductController extends Controller
         }
         $product->delete();
         // immagine
-        return redirect()->route('admin.products.index')->with('message', "Il $old_id Prodotto è stato rimosso");
+        return redirect()->route('admin.restaurants.show', compact('restaurant'))->with('message', "Il $old_id Prodotto è stato rimosso");
     }
 }

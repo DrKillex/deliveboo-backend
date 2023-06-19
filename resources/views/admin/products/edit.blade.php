@@ -18,7 +18,7 @@
 <div class="container">
     <h1>Inserisci i dati</h1>
 
-    <form action="{{ route('admin.products.update', $product)}}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('admin.products.update', $product)}}" method="POST" enctype="multipart/form-data"  class="form-input-image">
         @csrf
         @method('PUT')
         <div class="mb-3">
