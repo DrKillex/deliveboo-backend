@@ -22,7 +22,7 @@
         @csrf
         <div class="mb-3">
             <label for="name" class="form-label">Nome prodotto</label>
-            <input type="text" class="form-control" name="name" id="name" value="{{ old('name')}}" >
+            <input type="text" class="form-control" name="name" id="name" value="{{ old('name')}}" required minlength="1" maxlength="100">
         </div>
         <div class="mb-3">
             <label for="description" class="form-label">Descrizione prodotto</label>
@@ -30,11 +30,11 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Prezzo</label>
-            <input type="number" name="price" class="form-control" id="price" value="{{ old('price')}}" step="0.01" min="0.00">
+            <input type="number" name="price" class="form-control" id="price" value="{{ old('price')}}" step="0.01" min="0.00" max="99.99">
         </div>
         <div class="mb-3">
             <label for="image" class="form-label">Immagine</label>
-            <input class="form-control" name="image" type="file" id="image" value="{{ old('image')}}">
+            <input class="form-control" name="image" type="file" id="image" value="{{ old('image')}}" required >
         </div>
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="gluten_free" id="gluten-free" value="1" {{ old('gluten_free') ? 'checked' : '' }}>
