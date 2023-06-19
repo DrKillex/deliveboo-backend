@@ -60,6 +60,7 @@ class ProductController extends Controller
     // Show
     public function show(Product $product)
     {
+        // $product = Product::orderBy('name')->get();
         return view('admin.products.show', compact('product'));
     }
 
