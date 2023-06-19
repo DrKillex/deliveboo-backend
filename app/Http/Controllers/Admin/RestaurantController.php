@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreRestaurantRequest;
 use App\Http\Requests\UpdateRestaurantRequest;
 use App\Models\Category;
+use App\Models\Product;
 use App\Models\Restaurant;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -73,7 +74,8 @@ class RestaurantController extends Controller
      */
     public function show(Restaurant $restaurant)
     {
-        return view('admin.restaurants.show', compact('restaurant'));
+        $products = Product::where('restaurant_id', $restaurant->id)->orderBy('name')->get();
+        return view('admin.restaurants.show', compact('restaurant', 'products'));
     }
 
     /**

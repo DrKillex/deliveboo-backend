@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            @foreach ($restaurant->products as $product)
+            @foreach ($products as $product)
                 <div class="col-4">
                     <div class="card mx-3">
                         <div>
