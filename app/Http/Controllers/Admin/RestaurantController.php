@@ -103,7 +103,7 @@ class RestaurantController extends Controller
             if($restaurant->img){
                 Storage::delete($restaurant->img);
             }
-            $restaurant->img = Storage::put('uploads', $data['img']);
+            $data['img'] = Storage::put('uploads', $data['img']);
         }        
         $categories = isset($data['categories']) ? $data['categories'] : [];
         $restaurant->technologies()->sync($categories);

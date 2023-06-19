@@ -81,7 +81,7 @@ class ProductController extends Controller
             if($product->image){
                 Storage::delete($product->image);
             }
-            $product->image = Storage::put('uploads', $data['image']);
+            $data['image'] = Storage::put('uploads', $data['image']);
         }
         // immagine
         $product->update($data);

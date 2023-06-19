@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- @if ($restaurant)
+    @if ($restaurant)
         <h1>hai gia un ristorante</h1>
-    @else --}}
+    @else
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -66,5 +66,5 @@
                     </form>
                 </div>
             </div>
-         {{-- @endif --}}
+         @endif
 @endsection
