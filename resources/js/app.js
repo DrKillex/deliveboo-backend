@@ -11,8 +11,8 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
-// show preview upload image function
-function showPreview(event) {
+// show preview upload image function Product
+function showPreviewProduct(event) {
     if (event.target.files.length > 0) {
         const src = URL.createObjectURL(event.target.files[0]);
         const preview = document.getElementById("file-image-preview");
@@ -20,10 +20,21 @@ function showPreview(event) {
         preview.style.display = "block";
     }
 }
-
 const imageInput = document.querySelector('#image');
+imageInput.addEventListener('change', showPreviewProduct);
 
-imageInput.addEventListener('change', showPreview);
+// show preview upload image function Restaurant
+function showPreviewRestaurant(eventTwo) {
+    if (eventTwo.target.files.length > 0) {
+        const src = URL.createObjectURL(eventTwo.target.files[0]);
+        const preview = document.getElementById("file-image-preview-restaurants");
+        preview.src = src;
+        preview.style.display = "block";
+    }
+}
+
+const imageRestaurantInput = document.querySelector('#img-two');
+imageRestaurantInput.addEventListener('change', showPreviewRestaurant);
 
 // Condizione per Checkbox show Image Upload
 // if (document.querySelector('.form-input-image')) {

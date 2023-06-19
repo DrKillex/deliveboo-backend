@@ -4,11 +4,18 @@
     @if ($restaurant)
         <h1>hai gia un ristorante</h1>
     @else
+        {{-- validazione errori --}}
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        {{-- validazione errori --}}
 
-    {{-- errors --}}
-    @include('partials.errors')
-    {{-- /errors --}}
-    
         <div class="container">
             <div class="row">
                 <form action="{{ route('admin.restaurants.store') }}" method="POST" enctype="multipart/form-data"
@@ -21,7 +28,8 @@
                     </div>
                     @foreach ($categories as $category)
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="category" value="{{ $category->id }}" name="categories[]" {{ in_array($category->id, old('categories', [])) ? 'checked' : '' }}>
+                            <input class="form-check-input" type="checkbox" id="category" value="{{ $category->id }}"
+                                name="categories[]" {{ in_array($category->id, old('categories', [])) ? 'checked' : '' }}>
                             <label class="form-check-label" for="category">{{ $category->name }}</label>
                         </div>
                     @endforeach
@@ -55,12 +63,16 @@
                             placeholder="Inserisci orario d'apertura">
                     </div>
                     <div class="mb-3">
-                        <label for="img" class="form-label">Immagine ristorante:</label>
-                        <input class="form-control" type="file" id="img" name="img">
+                        <label for="image" class="form-label">Immagine ristorante:</label>
+                        <input class="form-control" type="file" id="image" name="img">
                     </div>
-                        <button class="btn btn-primary">Aggiungi</button>
-                    </form>
-                </div>
+                    {{-- Image Preview Upload --}}
+                    <div class="preview">
+                        <img id="file-image-preview">
+                    </div>
+                    <button class="btn btn-primary">Aggiungi</button>
+                </form>
             </div>
-         @endif
+        </div>
+    @endif
 @endsection
