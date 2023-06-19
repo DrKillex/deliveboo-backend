@@ -23,19 +23,6 @@ function showPreviewProduct(event) {
 const imageInput = document.querySelector('#image');
 imageInput.addEventListener('change', showPreviewProduct);
 
-// show preview upload image function Restaurant
-function showPreviewRestaurant(eventTwo) {
-    if (eventTwo.target.files.length > 0) {
-        const src = URL.createObjectURL(eventTwo.target.files[0]);
-        const preview = document.getElementById("file-image-preview-restaurants");
-        preview.src = src;
-        preview.style.display = "block";
-    }
-}
-
-const imageRestaurantInput = document.querySelector('#img-two');
-imageRestaurantInput.addEventListener('change', showPreviewRestaurant);
-
 // Condizione per Checkbox show Image Upload
 // if (document.querySelector('.form-input-image')) {
 
