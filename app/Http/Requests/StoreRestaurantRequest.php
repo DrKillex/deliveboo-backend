@@ -31,7 +31,8 @@ class StoreRestaurantRequest extends FormRequest
             'p_iva' => 'required|max:11|string',
             'description' => 'nullable|string',
             'opening_hours' => 'required',
-            'img' => 'required|image|max:2048|mimes:jpeg,jpg,png,gif'
+            'img' => 'required|image|max:2048|mimes:jpeg,jpg,png,gif',
+            'categories'=>'required|exists:categories,id',
         ];
     }
 }
