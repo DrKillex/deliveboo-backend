@@ -1,15 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-@if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+
+ {{-- validazione errori --}}
+ @if ($errors->any())
+ <div class="alert alert-danger">
+     <ul>
+         @foreach ($errors->all() as $error)
+             <li>{{ $error }}</li>
+         @endforeach
+     </ul>
+ </div>
+ @endif
+ {{-- validazione errori --}}
+
+
 <div class="container">
     <h1>Inserisci i dati</h1>
 
@@ -51,6 +56,13 @@
             </label>
         </div>
         <button type="submit" class="btn btn-primary mt-3">Invia</button>
+
+        {{-- show image upload --}}
+        <div id="image_input_container">
+            <div class="preview">
+                <img id="file-image-preview" @if ($product->image) src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" @endif>
+            </div>
+        </div>
 
     </form>
 </div>
