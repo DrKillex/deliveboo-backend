@@ -4,7 +4,9 @@
     @if ($restaurant)
         <h1>hai gia un ristorante</h1>
     @else
+
         {{-- validazione errori --}}
+
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -73,6 +75,8 @@
                     <button class="btn btn-primary">Aggiungi</button>
                 </form>
             </div>
+
         </div>
     @endif
+
 @endsection

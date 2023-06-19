@@ -2,10 +2,22 @@
 
 @section('content')
     <div class="container">
-        <a href="{{route('admin.products.edit', $product)}}">edit</a>
         <ul class="list-unstyled">
             <li>
-                <h2>title: {{ $product->name }}</h2>
+                <div class="card">
+                    <div>
+                        <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
+                    </div>
+                    <div class="card-body">
+                        <h2>Name: {{ $product->name }}</h2>
+                        <h3>Price: {{ $product->price }}$</h3>
+                        <p>Description: {{ $product->description }}</p>
+                        <div class="btn btn-warning">
+                            <a href="{{ route('admin.products.edit', $product) }}">edit</a>
+                        </div>
+                    </div>
+                    
+                </div>
             </li>
             {{-- <li>
                 @foreach ($restaurant->products as $product)

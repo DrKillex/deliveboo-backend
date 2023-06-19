@@ -2,15 +2,28 @@
 
 @section('content')
     <div class="container">
-        <ul class="list-unstyled">
+        <h2 class="my-3">Nome Ristorante: {{ $restaurant->name }}</h2>
+        <ul class="list-unstyled d-flex">
             <li>
-                <h2>title: {{ $restaurant->name }}</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"><a class="nav-link" href="{{ route('admin.products.create') }}">{{ __('Nuovo Prodotto') }}</a></h3>
+                    </div>
+                </div>
             </li>
-            <li>
-                @foreach ($restaurant->products as $product)
-                    <div><a href="{{route('admin.products.show', $product)}}">{{$product->name}}</a></div>
-                @endforeach
-            </li>
+            @foreach ($restaurant->products as $product)
+                <li>
+                    <div class="card mx-3">
+                        <div>
+                            <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a
+                                    href="{{ route('admin.products.show', $product) }}">{{ $product->name }}</a></h3>
+                        </div>
+                    </div>
+                </li>
+            @endforeach
             {{-- <!-- <li>
                 <h3>type: <a href="@if ($record->type) {{ route('admin.types.show', $record->type) }} @endif">{{ $record->type?->name ?: 'Nessuna tipologia' }}</a></h3>
             </li> -->
