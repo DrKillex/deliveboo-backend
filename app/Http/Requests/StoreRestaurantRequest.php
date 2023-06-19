@@ -24,14 +24,14 @@ class StoreRestaurantRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|max:150',
-            'address' => 'required|max:150',
-            'telephone' => 'required|max:15',
-            'email' => 'nullable|max:100',
-            'p_iva' => 'required|max:11',
-            'description' => 'nullable',
+            'name' => 'required|max:150|string',
+            'address' => 'required|max:150|string',
+            'telephone' => 'required|max:30|string',
+            'email' => 'nullable|max:100|email|string',
+            'p_iva' => 'required|max:11|string',
+            'description' => 'nullable|string',
             'opening_hours' => 'required',
-            'img' => 'nullable'
+            'img' => 'required|image|max:2048|mimes:jpeg,jpg,png,gif'
         ];
     }
 }

@@ -26,10 +26,10 @@ class StoreOrderRequest extends FormRequest
         return [
             'name' => 'required|string|max:50',
             'surname' => 'required|string|max:50',
-            'address' => 'required|max:150',
-            'email' => 'nullable|max:100',
-            'telephone' => 'required|max:15',
-            'total_price' => 'required|numeric',
+            'address' => 'required|max:150|string',
+            'email' => 'nullable|max:100|string|email',
+            'telephone' => 'required|max:30|string',
+            'total_price' => 'required|numeric|decimal:2',
             'payment_state' => 'required|boolean'
         ];
     }
