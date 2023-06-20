@@ -59,8 +59,8 @@
 
         {{-- show image upload --}}
         <div id="image_input_container">
-            <div class="preview">
-                <img id="file-image-preview" @if ($product->image) src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" @endif>
+            <div class="preview-edit">
+                <img id="file-image-preview" @if ($product->image) src="{{ asset($product->image) }}" alt="{{ $product->name }}" @endif>
             </div>
         </div>
 
