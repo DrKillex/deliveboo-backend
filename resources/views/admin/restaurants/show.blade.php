@@ -16,7 +16,7 @@
                 <div class="col-4">
                     <div class="card mx-3">
                         <div>
-                            <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
+                            <img src="{{ asset($product->image) }}" alt="{{ $product->name }}">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title"><a href="{{ route('admin.products.show', $product) }}">{{ $product->name }}</a></h3>
