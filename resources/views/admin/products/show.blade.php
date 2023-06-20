@@ -6,7 +6,7 @@
             <li>
                 <div class="card">
                     <div>
-                        <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}">
+                        <img src="{{ asset($product->image) }}" alt="{{ $product->name }}">
                     </div>
                     <div class="card-body">
                         <h2>Name: {{ $product->name }}</h2>
