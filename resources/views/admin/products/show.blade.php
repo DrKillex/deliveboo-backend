@@ -4,6 +4,9 @@
     <div class="container">
         <ul class="list-unstyled">
             <li>
+                <div class="btn btn-warning">
+                    <a href="{{ route('admin.restaurants.show', $product->restaurant) }}">torna ai prodotti</a>
+                </div>
                 <div class="card">
                     <div>
                         <img src="{{ asset($product->image) }}" alt="{{ $product->name }}">
