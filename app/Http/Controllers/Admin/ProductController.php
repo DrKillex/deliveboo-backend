@@ -54,7 +54,7 @@ class ProductController extends Controller
             $product->visible = 0;
         }
         $product->save(); 
-        return redirect()->route('admin.restaurants.show', compact('restaurant'))->with('message', 'Nuovo prodotto aggiunto');
+        return redirect()->route('admin.restaurants.show', compact('restaurant'))->with('message', "Nuovo prodotto con [Nome: $product->name] , [Id: $product->id] è stato aggiunto con successo");
     }
 
     // Show
@@ -86,7 +86,7 @@ class ProductController extends Controller
         }
         // immagine
         $product->update($data);
-        return redirect()->route('admin.restaurants.show', compact('restaurant'))->with('message', 'Nuovo prodotto aggiunto');
+        return redirect()->route('admin.restaurants.show', compact('restaurant'))->with('message', "Prodotto con [Nome: $product->name] , [Id: $product->id] è stato modificato con successo");
     }
 
     // Destroy
@@ -102,6 +102,6 @@ class ProductController extends Controller
         }
         $product->delete();
         // immagine
-        return redirect()->route('admin.restaurants.show', compact('restaurant'))->with('message', "Il $old_id Prodotto è stato rimosso");
+        return redirect()->route('admin.restaurants.show', compact('restaurant'))->with('message', "Il Prodotto [Nome: $product->name] , [Id: $old_id] è stato rimosso con successo");
     }
 }
