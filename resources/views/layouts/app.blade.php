@@ -42,17 +42,17 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
-                        {{-- <ul class="navbar-nav me-auto">
+                        <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{url('/') }}">{{ __('Home') }}</a>
+                                <a class="nav-link" href="http://localhost:5174/">{{ __('Home') }}</a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a class="nav-link" href="{{ route('admin.products.create') }}">{{ __('Nuovo Prodotto') }}</a>
                             </li>
                             <li>
                                 <a class="nav-link" href="{{ route('admin.restaurants.create') }}">{{ __('Nuovo Ristorante') }}</a>
-                            </li>
-                        </ul> --}}
+                            </li> --}}
+                        </ul>
 
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ms-auto">
