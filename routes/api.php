@@ -28,4 +28,4 @@ Route::get('restaurants/{slug}', [RestaurantController::class, 'show']);
 
 // Route::post('products', [ProductController::class, 'index']);
 // Route::get('products/{id}', [ProductController::class, 'show']);
-Route::post('products', [ProductController::class, 'getMenu']);
+Route::get('products/{slug}', [ProductController::class, 'getMenu']);
