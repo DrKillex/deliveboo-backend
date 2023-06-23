@@ -42,7 +42,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
-                        <ul class="navbar-nav me-auto">
+                        {{-- <ul class="navbar-nav me-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('/') }}">{{ __('Home') }}</a>
                             </li>
@@ -52,10 +52,10 @@
                             <li>
                                 <a class="nav-link" href="{{ route('admin.restaurants.create') }}">{{ __('Nuovo Ristorante') }}</a>
                             </li>
-                        </ul>
+                        </ul> --}}
 
                         <!-- Right Side Of Navbar -->
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ms-auto">
                             <!-- Authentication Links -->
                             @guest
                             <li class="nav-item">
