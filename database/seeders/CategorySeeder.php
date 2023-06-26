@@ -18,16 +18,31 @@ class CategorySeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        $categories = ['Italiano', 'Internazionale', 'Cinese', 'Giapponese', 'Messicano', 'Indiano', 'Pesce', 'Carne', 'Pizza'];
+         // PRENDIAMO IL FILE 'restaurants.php'
+        $categories = config('categories');
+
         Schema::disableForeignKeyConstraints();
         Category::truncate();
         Schema::enableForeignKeyConstraints();
         foreach ($categories as $category){
             $newCategory = new Category();
-            $newCategory->name = $category;
-            $newCategory->description = $faker->text(200);
+            $newCategory->name = $category['name'];
+            $newCategory->description = $category['description'];
             $newCategory->slug = Str::slug($newCategory->name);
             $newCategory->save();
         }
+
+
+        // $categories = ['Italiano', 'Internazionale', 'Cinese', 'Giapponese', 'Messicano', 'Indiano', 'Pesce', 'Carne', 'Pizza'];
+        // Schema::disableForeignKeyConstraints();
+        // Category::truncate();
+        // Schema::enableForeignKeyConstraints();
+        // foreach ($categories as $category){
+        //     $newCategory = new Category();
+        //     $newCategory->name = $category;
+        //     $newCategory->description = $faker->text(200);
+        //     $newCategory->slug = Str::slug($newCategory->name);
+        //     $newCategory->save();
+        // }
     }
 }
