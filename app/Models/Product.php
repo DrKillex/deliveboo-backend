@@ -18,9 +18,9 @@ class Product extends Model
     {
         return $this->belongsToMany(Order::class, 'product_orders', 'product_id', 'order_id')->withPivot('quantity');
     }
-    protected function image(): Attribute {
-        return Attribute::make(
-            get: fn(string|null $value) => $value !== null ? asset('storage/' . $value) : null,
-        );
-    }
+    // protected function image(): Attribute {
+    //     return Attribute::make(
+    //         get: fn(string|null $value) => $value !== null ? asset('storage/' . $value) : null,
+    //     );
+    // }
 }
