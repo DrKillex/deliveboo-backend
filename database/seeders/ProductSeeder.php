@@ -28,7 +28,7 @@ class ProductSeeder extends Seeder
         Schema::enableForeignKeyConstraints();
 
         foreach ($products as $product){
-            $restaurant = Restaurant::inRandomOrder()->first();
+        
             //$order = Order::inRandomOrder()->first();
             $newProduct = new Product();
             $newProduct->name = $product['name'];
@@ -39,10 +39,11 @@ class ProductSeeder extends Seeder
             $newProduct->gluten_free = 0;
             $newProduct->vegan = 0;
             $newProduct->slug = Str::slug($newProduct->name, '-');
-            $newProduct->restaurant_id = $restaurant->id;
+            $newProduct->restaurant_id = $product['restaurant_id'];
             $newProduct->save();
             //$product->orders()->attach($order->id, ['quantity' => 5]);
         }
+
 
         // Schema::disableForeignKeyConstraints();
         // Product::truncate();
