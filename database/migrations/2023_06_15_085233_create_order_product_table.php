@@ -23,7 +23,6 @@ return new class extends Migration
             // senza una chiave primaria la creiamo noi con l'array formato da order id e product id
             $table->primary(['order_id', 'product_id']);
             
-            $table->dateTime('date');
             $table->unsignedTinyInteger('quantity');
             
             $table->timestamps();
