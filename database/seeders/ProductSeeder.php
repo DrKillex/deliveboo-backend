@@ -28,7 +28,7 @@ class ProductSeeder extends Seeder
         Schema::enableForeignKeyConstraints();
 
         foreach ($products as $product){
-        
+
             //$order = Order::inRandomOrder()->first();
             $newProduct = new Product();
             $newProduct->name = $product['name'];
