@@ -26,9 +26,9 @@ class Restaurant extends Model
     {
         return $this->hasMany(Product::class);
     }
-    protected function img(): Attribute {
-        return Attribute::make(
-            get: fn(string|null $value) => $value !== null ? asset('storage/' . $value) : null,
-        );
-    }
+    // protected function img(): Attribute {
+    //     return Attribute::make(
+    //         get: fn(string|null $value) => $value !== null ? asset('storage/' . $value) : null,
+    //     );
+    // }
 }
