@@ -28,6 +28,7 @@ class ProductSeeder extends Seeder
         Schema::enableForeignKeyConstraints();
 
         foreach ($products as $product){
+
             //$order = Order::inRandomOrder()->first();
             $newProduct = new Product();
             $newProduct->name = $product['name'];
@@ -42,6 +43,7 @@ class ProductSeeder extends Seeder
             $newProduct->save();
             //$product->orders()->attach($order->id, ['quantity' => 5]);
         }
+
 
         // Schema::disableForeignKeyConstraints();
         // Product::truncate();
