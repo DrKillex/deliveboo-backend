@@ -2,6 +2,7 @@
 
 // use App\Http\Controllers\Api\ProductController;
 
+use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\RestaurantController;
 use Illuminate\Http\Request;
@@ -29,3 +30,4 @@ Route::get('restaurants/{slug}', [RestaurantController::class, 'show']);
 // Route::post('products', [ProductController::class, 'index']);
 // Route::get('products/{id}', [ProductController::class, 'show']);
 Route::get('products/{slug}', [ProductController::class, 'getMenu']);
+Route::post('payment', [OrderController::class, 'payment']);
