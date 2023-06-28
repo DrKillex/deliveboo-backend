@@ -39,7 +39,7 @@ return [
     ],
     [
         'user_id'=>'4',
-        'name'=>"'Ca'Pelletti'",
+        'name'=>'Ca Pelletti',
         'slug'=>"'ca'pelletti'",
         'address'=>'Via Altabella, 15',
         'telephone'=>'06 56435 103',
@@ -143,7 +143,7 @@ return [
         'p_iva'=>'12343223133',
         'description'=>"'Il ristorante è un accogliente ristorante di quartiere che offre un'esperienza culinaria autentica e genuina. Situata in un ambiente familiare e informale, la trattoria è un luogo dove gli ospiti possono gustare piatti tradizionali preparati con passione e cura. L'attenzione al cliente è una priorità nella trattoria, e lo staff sarà sempre disponibile a consigliarvi sui piatti e ad offrire un servizio cordiale e attento. La combinazione di autenticità culinaria, atmosfera accogliente e servizio di qualità rende la trattoria un luogo ideale per una serata piacevole tra amici o per un pranzo in famiglia.'",
         'opening_hours'=>'12:30AM to 23:00PM',
-        'img'=>'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fit%2Flocanda-da-luca.it.html&psig=AOvVaw0UFrbQ3gk25XLIq_xCMx7m&ust=1687528522387000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOjOyOOD1_8CFQAAAAAdAAAAABAJ',
+        'img'=>'https://www.vito.it/wp-content/uploads/2020/06/ristorante.jpg',
     ],
     [
         'user_id'=>'13',

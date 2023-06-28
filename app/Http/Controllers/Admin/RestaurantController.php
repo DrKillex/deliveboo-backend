@@ -87,7 +87,7 @@ class RestaurantController extends Controller
     public function edit(Restaurant $restaurant)
     {
         $categories=Category::all();
-        return view('admin.restaurants.edit', compact('categories'));
+        return view('admin.restaurants.edit', compact('restaurant', 'categories'));
     }
 
     /**
@@ -110,7 +110,7 @@ class RestaurantController extends Controller
         $categories = isset($data['categories']) ? $data['categories'] : [];
         $restaurant->categories()->sync($categories);
         $restaurant->update($data);
-        return view('admin.restaurants.show', compact('restaurant'));
+        return redirect()->route('admin.dashboard');
     }
 
     /**

@@ -25,7 +25,12 @@
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title"><a class="nav-link"
-                                href="{{ route('admin.products.create') }}">{{ __('Nuovo Prodotto') }}</a></h3>
+                                href="{{ route('admin.products.create') }}">Nuovo prodotto</a></h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"><a class="nav-link" href="{{ route('admin.restaurants.edit', $restaurant) }}">Modifica ristorante</a></h3>
                     </div>
                 </div>
             </div>
