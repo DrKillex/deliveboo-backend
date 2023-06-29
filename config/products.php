@@ -7,7 +7,7 @@ return [
         "description" => "Panino con semi di sesamo*, doppio hamburger di carne italiana, fonduta di formaggio con Scamorza, bacon croccante, salsa Texana homemade (BBQ, ketchup, salsa Messicana e curry), insalata iceberg, pomodoro, accompagnato da patate* Premium Fries",
         "price" => 14.40,
         "image" => "https://www.oldwildwest.it/proxyvfs.axd/img_main/r25754/western-smash-burger-per-sito-jpg?v=18978&ext=.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'western-smash-burger'
@@ -18,7 +18,7 @@ return [
         "description" => "Panino, hamburger, formaggio fuso e bacon grigliato",
         "price" => 12.40,
         "image" => "https://static.alfonsino.cloud/uploads/products/356/HdxFqrwXs2Pb6LC0IaHcMwgzGHiUZUlvT8sHXFa2.jpeg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'dakota'
@@ -29,7 +29,7 @@ return [
         "description" => "Panino, hamburger doppio, doppio formaggio fuso, doppio bacon grigliato, servito con cipolla bianca",
         "price" => 16.40,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/dqrjgb6wynvpzaeciouy",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'toro-seduto-double'
@@ -40,7 +40,7 @@ return [
         "description" => "Costine di maiale cotte in sottovuoto con salsa Barbecue servite con patate* Premium fries e salsa Barbecue",
         "price" => 15.50,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/products/zhug3gnxukzm9c4lu1x0",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'bbq-ribs'
@@ -51,7 +51,7 @@ return [
         "description" => "Insalata mista, petto di pollo*, crostini di pane* fritti, scaglie di Parmigiano Reggiano DOP e salsa Caesar",
         "price" => 11.00,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/n33eb92tdouez6nrgcly",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'arizona-salad'
@@ -62,7 +62,7 @@ return [
         "description" => "Il meglio delle nostre carni composto da tagliata di Picanha, tagliata di entrecote e scamone di manzo, condite con olio extravergine di oliva e fiocchi di sale su letto di spinacino, il tutto accompagnato da patate al forno",
         "price" => 22.80,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/products/fxsas2wf1stb2cdoudar",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'gran-canyon-mix'
@@ -73,7 +73,7 @@ return [
         "description" => "2 Onion rings*, 2 chicken nuggets*, 2 chicken wings*, 2 mozzarella sticks*, 2 green balls*, 2 cheesy sticks*, serviti con salsa Old Wild West. In base alla disponibilità le 2 mozzarella sticks* potrebbero essere sostituite da 2 cheesy sticks*",
         "price" => 12.00,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/kxcgkhafiug1rr419yxq",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'appetizers-mix'
@@ -84,7 +84,7 @@ return [
         "description" => "Anelli di cipolla* pastellati e fritti, serviti con salsa barbecue (8 pezzi)",
         "price" => 5.70,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/products/fxsas2wf1stb2cdoudar",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'onion-rings'
@@ -95,7 +95,7 @@ return [
         "description" => "Panino*, hamburger*, formaggio Cheddar, lattuga e salsa OWW",
         "price" => 8.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/zd2ndill9vktgcizxsbe",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'navajo'
@@ -106,7 +106,7 @@ return [
         "description" => "Tagliata di Picanha alla griglia, servita con verdure al forno e accompagnata da salsa Chimichurri homemade",
         "price" => 18.50,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/k5v3l1saseqkc1ljkrss",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'pichanha-steak'
@@ -117,7 +117,7 @@ return [
         "description" => "Pomodori pelati, spolverata di formaggio grattugiato e mozzarella di bufala",
         "price" => 13.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/w0jq0uuu2pzl4jkory49",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'bufalina'
@@ -128,7 +128,7 @@ return [
         "description" => "Pomodori pelati, splolverata di formaggio grattugiato e fior di latte dAgerola",
         "price" => 10.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/dzkieoorh0hh2ktj8ob5",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'margherita'
@@ -139,7 +139,7 @@ return [
         "description" => "Pomodori pelati, datterini rossi confit, alici, olive denocciolate, capperi, origano e aglio",
         "price" => 12.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/gkqt2nhoeejvalrdjdxo",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'marinara-secondo-pizzium'
@@ -150,7 +150,7 @@ return [
         "description" => "Fior di latte d'Agerola, salame cacciatorino, Casciotta di Urbino e pangrattato profumato alle olive",
         "price" => 14.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/j1ff6xlfvsi4olcswvbw",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'marche'
@@ -161,7 +161,7 @@ return [
         "description" => "Fior di latte d'Agerola, bresaola, datterini rossi freschi, rucola e scaglie di Grana Padano",
         "price" => 14.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/o3feehuan9tuq7kizzi3",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'lombardia'
@@ -172,7 +172,7 @@ return [
         "description" => "Fior di latte d'Agerola, bresaola, datterini rossi freschi, rucola e scaglie di Grana Padano",
         "price" => 14.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/o3feehuan9tuq7kizzi3",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'lombardia'
@@ -183,7 +183,7 @@ return [
         "description" => "Fior di latte d'Agerola, crema di zucchine, fiori di zucca, zucchine e scaglie di Grana Padano",
         "price" => 14.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/fjiake4gk1acc5n9bm3s",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'campania'
@@ -194,7 +194,7 @@ return [
         "description" => "Fior di latte dAgerola, mortadella e granella di pistacchio",
         "price" => 13.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vzn1gtd48ntpzv8wtscy",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'emilia-romagna'
@@ -205,7 +205,7 @@ return [
         "description" => "Provola affumicata d'Agerola, porchetta di Ariccia e cicoria",
         "price" => 13.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/kjlvqskstut0myibcqj2",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'lazio'
@@ -216,7 +216,7 @@ return [
         "description" => "Pomodori pelati, melanzane e scaglie di ricotta salata stagionata",
         "price" => 13.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/aujhof1t0gpxhaly6y5y",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'sicilia'
@@ -227,7 +227,7 @@ return [
         "description" => "Crudo, Mozzarella, Gamberetti, Salsa cocktail, Lattuga",
         "price" => 9.00,
         "image" => "https://media.strooka.com/65/golosa1.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'la-golosa'
@@ -238,7 +238,7 @@ return [
         "description" => "Spianata calabra, Brie, Rucola",
         "price" => 7.10,
         "image" => "https://media.strooka.com/65/piccante.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'la-piccante'
@@ -249,7 +249,7 @@ return [
         "description" => "Spianata calabra, Brie, Rucola",
         "price" => 8.70,
         "image" => "https://media.strooka.com/65/mare1.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'il-mare'
@@ -260,7 +260,7 @@ return [
         "description" => "Tacchino, Provola affumicata, Funghi, Rucola, Pat di olive",
         "price" => 8.50,
         "image" => "https://media.strooka.com/65/raffinata1.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'la-raffinata'
@@ -271,7 +271,7 @@ return [
         "description" => "Salsiccia, Speck, Provola affumicata, Mix Porcini, Lattuga, Salsa boscaiola",
         "price" => 8.50,
         "image" => "https://media.strooka.com/65/montagna.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'la-montagna'
@@ -282,7 +282,7 @@ return [
         "description" => "Speck, Brie, Funghi",
         "price" => 7.10,
         "image" => "https://media.strooka.com/65/LA_MALGA_1250x1500.png",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'la-malga'
@@ -293,7 +293,7 @@ return [
         "description" => "Crudo, Squacquerone, Rucola",
         "price" => 7.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ayruydzlbnvm7cncantx",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'la-leggenda'
@@ -304,7 +304,7 @@ return [
         "description" => "Cotto, Mozzarella, Funghi",
         "price" => 7.10,
         "image" => "https://media.strooka.com/65/semplice1.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'la-semplice'
@@ -315,7 +315,7 @@ return [
         "description" => "Provola affumicata, Crema di carciofi, Melanzane Condite, Peperoni grigliati, Noci",
         "price" => 8.90,
         "image" => "https://media.strooka.com/65/LA_DECISA_1250x1500.png",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'la-decisa'
@@ -326,7 +326,7 @@ return [
         "description" => "Bresaola, Squacquerone, Zucchine grigliate, Crema all'aceto balsamico",
         "price" => 8.80,
         "image" => "https://media.strooka.com/65/estate2.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'l'estate'"
@@ -337,7 +337,7 @@ return [
         "description" => "Capelletti di pasta fresca conditi con ragù di carne",
         "price" => 11.90,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/xssaqb82sfz4aejackar",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'i-capelletti-al-regù'
@@ -348,7 +348,7 @@ return [
         "description" => "Lasagne di pasta fresca immerse nel ragù di carne",
         "price" => 9.90,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/z7iqta5ztk0kbs4rd7l3",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'la-lasagna-al-forno'
@@ -359,7 +359,7 @@ return [
         "description" => "Gnocchi al sugo basilico",
         "price" => 9.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ooexrajoa8hyivsh6ofe",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'gnocchi-al-pomodoro'
@@ -370,7 +370,7 @@ return [
         "description" => "Lo spezzatino con le patate",
         "price" => 13.90,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/pq8f86bfytgyhryc3xmv",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'lo-spezzatino'
@@ -381,7 +381,7 @@ return [
         "description" => "Insalata mista",
         "price" => 3.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/pelodnao4gn9aovbeint",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'lo-spezzatino'
@@ -392,7 +392,7 @@ return [
         "description" => "Tortellini con panna e prosciutto",
         "price" => 12.50,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/inwjqzvobbyzqrvcpgi6",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'i-tortellini-alla-cesarina'
@@ -403,7 +403,7 @@ return [
         "description" => "Filetto di pollo cotto alla piastra con limone e rosmarino, servito con patate, fagiolini, pomodori, olive e salsa Ca'Pelletti a parte",
         "price" => 13.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/dqork7xwgc9ukelmthf3",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'il-pollo'
@@ -414,7 +414,7 @@ return [
         "description" => "insalata mista con pomoodrini al basilico fresco, cetriolo, olive leccino, mozzarella fiordilatte e crostini di pane croccanti",
         "price" => 10.90,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/baeckwzybxil3o7e8mby",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'panzanella-croccante'
@@ -425,7 +425,7 @@ return [
         "description" => "Il Tiramisù è il dolce al cucchiaio preparato con uova, zucchero, savoiardi, caffè e cacao",
         "price" => 4.50,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/bf755pcyezvbap1bj7yx",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tiramisù'
@@ -436,7 +436,7 @@ return [
         "description" => "Mattonella di biscotti colussi con mascarpone e crema al caffè",
         "price" => 3.80,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/muhpgaegeuupnggisaja",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'dolce-mattone'
@@ -447,7 +447,7 @@ return [
         "description" => "Tofu, alghe wakame e condimenti informazioni: il prodotto contiene diossido di zolfo, soia e verdure",
         "price" => 3.00,
         "image" => "https://www.ikiya.it/files/2020/03/miso-soup-Copy.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'zuppa-di-miso'
@@ -458,7 +458,7 @@ return [
         "description" => "Insalata, alghe wakame e condimenti informazioni: il prodotto contiene verdure",
         "price" => 5.00,
         "image" => "https://www.foodandwineitalia.com/wp-content/uploads/elementor/thumbs/Insalata-di-alghe-plttfwx8myevja0l7h0t8ukrh39lpyas05r0ss2khk.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'insalata-con-alghe'
@@ -469,7 +469,7 @@ return [
         "description" => "Riso venere, pollo, manzo, cipollotti, carne suina sfilacciata, farina e mais informazioni: il prodotto contiene cereali che contengono glutine, diossido si zolfo, pesce, verdure e uova",
         "price" => 7.00,
         "image" => "https://www.foodpal-app.com/uploads/images/meals/2625/haehnchen-reis-mit-gemuese-und-ananas-5f91205d98843-1000.webp",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'riso-thai'
@@ -480,7 +480,7 @@ return [
         "description" => "Verdure informazioni: il prodotto contiene verdure",
         "price" => 5.00,
         "image" => "https://www.foodpal-app.com/uploads/images/meals/2625/haehnchen-reis-mit-gemuese-und-ananas-5f91205d98843-1000.webp",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'yakimeshi'
@@ -491,7 +491,7 @@ return [
         "description" => "Riso, piselli, uova e prosciutto cotto",
         "price" => 5.00,
         "image" => "https://www.ilcuoreinpentola.it/wp-content/uploads/2020/05/riso-alla-cantonese.jpeg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'riso-alla-cantonese'
@@ -502,7 +502,7 @@ return [
         "description" => "Riso, verdure, uova, frutti di mare, ananas e funghi shiitake informazioni: il prodotto è surgelato, contiene crostacei, diossido di zolfo, pesce, verdure, soia e uova",
         "price" => 6.50,
         "image" => "https://i0.wp.com/www.piccolericette.net/piccolericette/wp-content/uploads/2015/11/1505_riso.jpg?resize=895%2C616&ssl=1",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'riso-al-curry'
@@ -513,7 +513,7 @@ return [
         "description" => "Farina, carne suina, verdure, uova, germogli di soia, alghe e cipollotti informazioni: il prodotto contiene diossido di zolfo, cereali che contengono glutine, verdure e soia",
         "price" => 9.80,
         "image" => "https://www.cucchiaio.it/content/cucchiaio/it/ricette/2021/02/ramen-ricetta-originale/_jcr_content/header-par/image-single.img.jpg/1613405042449.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'ramen'
@@ -524,7 +524,7 @@ return [
         "description" => "Spaghetti di grano, uova, verdure e gamberi informazioni: il prodotto contiene crostacei, verdure, soia e uova",
         "price" => 6.00,
         "image" => "https://www.cucchiaio.it/content/cucchiaio/it/ricette/2021/02/ramen-ricetta-originale/_jcr_content/header-par/image-single.img.jpg/1613405042449.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'spaghetti-di-riso-con-gamberi'
@@ -535,7 +535,7 @@ return [
         "description" => "Tagliatelle di riso, gamberi, uova, arachidi, germogli di soia, tofu e salsa thai informazioni: il prodotto contiene arachidi, cereali che cobntengono glutine, crostacei, diossido di zolfo, soia e uova",
         "price" => 7.00,
         "image" => "https://cottoecrudo.it/wp-content/uploads/2019/09/pad-thai-.jpeg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'spaghetti-di-riso-con-gamberi'
@@ -546,7 +546,7 @@ return [
         "description" => "Insalata, polpo e condimenti informazioni: il prodotto è surgelato, contiene pesce e verdure",
         "price" => 7.00,
         "image" => "https://custonaciweb.it/wp-content/uploads/2021/10/Insalata-di-polpo-2.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'insalata-con-polpo'
@@ -557,7 +557,7 @@ return [
         "description" => "Riso bianco, salmone crudo, spigola, crudo, tofu fritto, ravanelli, zenzero, noci, arachidi pelate, avocado, salsa poke e salsa teriyaki",
         "price" => 15.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/s0lgae11pkvyhsjzf1fg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tokyo-poke'
@@ -568,7 +568,7 @@ return [
         "description" => "Riso bianco metà e metà riso integrele, tonno, crudo, tartare di salmone, ananas, cetrioli, cipolla fritta, piselli semi di sesamo, salsa di soia. salsa poke e salsa teriyaki",
         "price" => 15.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/li02wxwoajhzehlvbcfr",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'soka-poke'
@@ -579,7 +579,7 @@ return [
         "description" => "Riso bianco, riso venare, salmone crudo, tartareli, salmone, edamame, avocado, fagioli, alghe wakame, cavolo bianco, salsa poke, salsa mango e semi di sesamo.",
         "price" => 12.80,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/cuktiiw2ybz5smtqs5yn",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'niko-poke'
@@ -590,7 +590,7 @@ return [
         "description" => "Riso bianco, gamberi crudi, tonno crudo, pomodorini, cipolla fritta, insalata mista, noci, olive, verde, succo di limone, salsa poke, salsa di sesamo e semi di sesamo.",
         "price" => 15.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/kpsokwjzmlzqim4212dh",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'koto-poke'
@@ -601,7 +601,7 @@ return [
         "description" => "Riso bianco, salmone marinato, tartare di salmone, tonno crudo, cetrioli, carote, mango, avocado, olive verde, mandorle a fette, fette limone, semi di sesamo, salsa poke e salsa mango.",
         "price" => 17.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/aei9xalgwp7yqalmwahc",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'ota-poke'
@@ -612,7 +612,7 @@ return [
         "description" => "Riso bianco, polipo cotto, pollo cotto, avocado, carote, edamame, noci, semi di sesamo, salsa di poke e maionese piccante.",
         "price" => 18.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/hn72wfytwnld0tx7se5y",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'hino-poke'
@@ -623,7 +623,7 @@ return [
         "description" => "Riso bianco, tonno marinato, gamberi, edmame, giromoli di soia, pomodorini, cavolo bianco, fagioli, salsa poke e salsa mango.",
         "price" => 14.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/hn72wfytwnld0tx7se5y",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nar-poke'
@@ -634,7 +634,7 @@ return [
         "description" => "Riso bianco, riso integrale, riso venere. salmone crudo, tonno crudo, polipo cotto alghe wakame, avocado, edmame, mais, olive nere, mandorle, fette salsa di soia, salsa poke, salsa sesamo e semi di sesamo.",
         "price" => 16.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jcbyyoqwyucotyqsnygq",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nigo-poke'
@@ -645,7 +645,7 @@ return [
         "description" => "Bevanda analcolica zuccherata.",
         "price" => 2.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/gptrl1hhk267r066nmcv",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'coca-cola'
@@ -656,7 +656,7 @@ return [
         "description" => "Riso bianco, pollo doppio, avocado, Philadelphia, edamame, carote, salsa yogurt, arachidi e sesamo.",
         "price" => 14.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ddnaxdqff10f1svbgx9r",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'chicken-bowl'
@@ -667,7 +667,7 @@ return [
         "description" => "Quinoa, tofu doppio, avocado, edamame, germogli di soia, pomodori, salsa teriyaki, salsa avocado, sesamo, alga nori.",
         "price" => 14.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ddnaxdqff10f1svbgx9r",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'veggie-bowl'
@@ -678,7 +678,7 @@ return [
         "description" => "Riso Venere, salmone doppio, mango, Philadelphia, cipollotto verde, cavolo rosso, salsa mango e orange tobiko.",
         "price" => 14.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ddnaxdqff10f1svbgx9r",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'raimbow-bowl'
@@ -689,7 +689,7 @@ return [
         "description" => "Riso bianco, tonno marinato, surimi, avocado, carote, germogli crunchy misti, mais, salsa mango e salsa di soia.",
         "price" => 15.99,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ddnaxdqff10f1svbgx9r",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'kobe-bowl'
@@ -700,7 +700,7 @@ return [
         "description" => "Riso bianco, salmone crudo, insalata, avocade, edamane, cavolo bianco, tartare di tonno e salsa di soia.",
         "price" => 14.99,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ddnaxdqff10f1svbgx9r",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'hot-bowl'
@@ -711,7 +711,7 @@ return [
         "description" => "Riso bianco, salmone crudo, insalata, avocade, edamane, cavolo bianco, tartare di tonno e salsa di soia.",
         "price" => 14.99,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ddnaxdqff10f1svbgx9r",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'hot-bowl'
@@ -722,7 +722,7 @@ return [
         "description" => "Bevanda analcolica zuccherata al gusto arancia.",
         "price" => 2.99,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ddnaxdqff10f1svbgx9r",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'fanta'
@@ -733,7 +733,7 @@ return [
         "description" => "Bevanda analcolica zuccherata al gusto pesca.",
         "price" => 2.00,
         "image" => "https://chioscomaradona.com/89-large_default/te-alla-pesca.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'thè-alla-pesca'
@@ -744,7 +744,7 @@ return [
         "description" => "Biscotti, burro, nutella, formaggio fresco spalmabile e granella di nocciole",
         "price" => 14.99,
         "image" => "https://www.buttalapasta.it/wp-content/uploads/2021/03/cheesecake-alla-nutella.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'cheesecake-alla-nutella'
@@ -755,7 +755,7 @@ return [
         "description" => "Panna fresca liquida, baccello di vaniglia, zucchero e gelatina in fogli.",
         "price" => 8.99,
         "image" => "https://www.ilgiornaledelcibo.it/wp-content/uploads/2007/12/shutterstock_139018409.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'pannacotta-alla-fragola'
@@ -766,7 +766,7 @@ return [
         "description" => "Tortellini fatti in brodo.",
         "price" => 12.90,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/zxhayxh5ud6uvidyxehi",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tortellini-in-brodo'
@@ -777,7 +777,7 @@ return [
         "description" => "Con panna e crema di parmigiano",
         "price" => 12.90,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/m1kfhnke37wk199nuccs",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tortellini-con-panna-e-crema-di-parmigiano'
@@ -788,7 +788,7 @@ return [
         "description" => "Prosciutto crudo e crema bolognese",
         "price" => 13.90,
         "image" => "https://wips.plug.it/cips/buonissimo.org/cms/2011/08/cotolette-alla-bolognese.jpg?w=712&a=c&h=406",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'cottoletta-alla-milanese'
@@ -799,7 +799,7 @@ return [
         "description" => "Passatelli in brodo",
         "price" => 11.90,
         "image" => "https://www.buttalapasta.it/wp-content/uploads/2021/10/passatelli-in-brodo.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'passattelli-in-brodo'
@@ -810,7 +810,7 @@ return [
         "description" => "con ragù bolognese",
         "price" => 13.90,
         "image" => "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/47D03B42-DCAE-405A-8FC0-B2337A5434C8/Derivates/95DAFC47-D6E4-46EF-AD2F-B67EF1FAD85F.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tagliatelle-al-ragù'
@@ -821,7 +821,7 @@ return [
         "description" => "Gramiglia con panna, salsiccia e noce moscata",
         "price" => 15.90,
         "image" => "https://www.cookingchiantituscany.com/wp-content/uploads/2020/05/Gramigna-con-salsiccia.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'gramiglia-con-panna-salsiccia-e-noce-moscata'
@@ -832,7 +832,7 @@ return [
         "description" => "Garganelli con speck e zucchine",
         "price" => 11.90,
         "image" => "https://media-assets.lacucinaitaliana.it/photos/61fd3a27d964447f7f1327d6/1:1/w_2560%2Cc_limit/Garganelli-con-spigola-pomodoro-e-salsa-di-zucchine.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'garganelli-speck-e-zucchine'
@@ -843,7 +843,7 @@ return [
         "description" => "Vitello, vino, burro e farina",
         "price" => 15.90,
         "image" => "https://www.giallozafferano.it/images/205-20597/Scaloppine-al-vino-bianco-e-prezzemolo_650x433_wm.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'scaloppine-al-vino'
@@ -854,7 +854,7 @@ return [
         "description" => "prosciutto e melone",
         "price" => 10.90,
         "image" => "https://www.meteoweb.eu/wp-content/uploads/2016/07/prosciutto-e-melone.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'prosciutto-e-melone'
@@ -865,7 +865,7 @@ return [
         "description" => "Spezzatino di Tacchino con pomodoro e Zenzero",
         "price" => 13.90,
         "image" => "https://www.ricettealvolo.it/wp-content/uploads/2018/03/spezzatino-di-tacchino11.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'spezzatino'
@@ -876,7 +876,7 @@ return [
         "description" => "Pancetta, patate al brucio e rosmarino",
         "price" => 8.00,
         "image" => "https://media-cdn.tripadvisor.com/media/photo-s/1c/fd/72/5d/pinsa-romana-pancetta.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'pinsa-romana-con-pancetta'
@@ -887,7 +887,7 @@ return [
         "description" => "Mortadella e granella di pistacchio",
         "price" => 8.00,
         "image" => "https://d35056ed74.cbaul-cdnwnd.com/ba3d413287140072f5721afb09ca618e/200000220-da396da398/nsa%20crema%20al%20pistacchio%2Cmoratella%20e%20granella%20di%20pistacchio.jpg?ph=d35056ed74",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'pinsa-mortadella-e-pistacchio'
@@ -898,7 +898,7 @@ return [
         "description" => "Polpette di carne al sugo e ricotta salata",
         "price" => 7.00,
         "image" => "https://i2.wp.com/www.piccolericette.net/piccolericette/wp-content/uploads/2015/11/1611_Panini.jpg?resize=895%2C616&ssl=1",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'panino-con-polpette'
@@ -909,7 +909,7 @@ return [
         "description" => "Particolare panino pugliese ripieno di filetti di pollo fritto, mozzarella, maionese e insalata",
         "price" => 7.00,
         "image" => "https://i2.wp.com/www.piccolericette.net/piccolericette/wp-content/uploads/2015/11/1611_Panini.jpg?resize=895%2C616&ssl=1",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'panino-con-pollo-fritto'
@@ -920,7 +920,7 @@ return [
         "description" => "Capocollo, pancetta affumicata, caciocavallo, parmiggiano e pangrattato - 7 pezzi",
         "price" => 14.00,
         "image" => "https://statics.cedscdn.it/photos/MED_HIGH/02/25/6410225_29231736_bombetta_autentica_riconoscimento_regione_puglia_martina_franca_cisternino.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'bombetta-con-pancetta'
@@ -931,7 +931,7 @@ return [
         "description" => "Capocollo, pistacchio, caciocavallo, parmiggiano e pangrattato - 5 pezzi",
         "price" => 14.50,
         "image" => "https://i2.wp.com/www.piccolericette.net/piccolericette/wp-content/uploads/2015/11/1611_Panini.jpg?resize=895%2C616&ssl=1",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'bombetta-con-pistacchio'
@@ -942,7 +942,7 @@ return [
         "description" => "10 Pezzi di anelli di cipolla",
         "price" => 5.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/og6meyxeisumfnln0dq1",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'anelli-di-cipolla'
@@ -953,7 +953,7 @@ return [
         "description" => "Base pomodoro e mozzarella",
         "price" => 8.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/lwo2vxyulsgkdhhdvykh",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'panzerotto-fritto'
@@ -964,7 +964,7 @@ return [
         "description" => "Acqua gassata gusto limone",
         "price" => 4.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jqb3llmfptrs84vbyxsm",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'sprite-bottiglia'
@@ -975,7 +975,7 @@ return [
         "description" => "Mozzarelline fritte - 10 pezzi",
         "price" => 5.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/khw3uakrtite56qnz3dy",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'mozzarelline-fritte'
@@ -986,7 +986,7 @@ return [
         "description" => "Insalata mista di stagione",
         "price" => 6.00,
         "image" => "https://wips.plug.it/cips/buonissimo.org/cms/2016/06/insalata-mista-vegana.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nuggets-di-pollo'
@@ -997,7 +997,7 @@ return [
         "description" => "Cotolette di filetto di pollo e patatine fritte",
         "price" => 10.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jaghxtm0poj6mmuk7omo",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'cottoletta-e-patatine-fritte'
@@ -1008,7 +1008,7 @@ return [
         "description" => "20 Crocchette di pollo fritte",
         "price" => 11.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/hss4i0b7ndrk4ksk9ajq",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'crocchette-di-pollo-fritte'
@@ -1019,7 +1019,7 @@ return [
         "description" => "ali di pollo",
         "price" => 4.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/cxllhcp0tlrcmztgaq6k",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'ali-di-pollo-fritte'
@@ -1030,7 +1030,7 @@ return [
         "description" => "Spiedino di bocconcini di pollo piccanti",
         "price" => 2.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/cyvrcpxwfdrodq1wu2tg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'spiedino-di-bocconcini-piccanti'
@@ -1041,7 +1041,7 @@ return [
         "description" => "patate",
         "price" => 4.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/h7r5np6dlwofmowqzrfm",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'patatine-fritte'
@@ -1052,7 +1052,7 @@ return [
         "description" => "Calamari alla griglia",
         "price" => 14.00,
         "image" => "https://primochef.it/wp-content/uploads/2021/04/SH_calamari_alla_griglia.jpg.webp",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'calamari-alla-griglia'
@@ -1063,7 +1063,7 @@ return [
         "description" => "Spiedini di Gamberi",
         "price" => 13.00,
         "image" => "https://blog.giallozafferano.it/cucinachetipassaoriginal/wp-content/uploads/2010/10/spiedini-di-gamberi-24.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'spiedini-di-gamberi'
@@ -1074,7 +1074,7 @@ return [
         "description" => "Tartare di tonno",
         "price" => 11.00,
         "image" => "https://media-assets.lacucinaitaliana.it/photos/61fd26b1f9bff304ce3ecb0a/16:9/w_1280,c_limit/Tartare-di-tonno-con-sesamo-e-wasabi-ok.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tartare-di-tonno'
@@ -1085,7 +1085,7 @@ return [
         "description" => "Gamberi saltati con friarielli",
         "price" => 12.00,
         "image" => "https://www.ceramicavietrese.it/files/admin/immagini/la-mia-ricetta-ceramica-vietrese1_l.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'gamberi-saltati-con-friarielli'
@@ -1096,7 +1096,7 @@ return [
         "description" => "Gamberi rossi, scampi e ostriche",
         "price" => 23.00,
         "image" => "https://media-cdn.tripadvisor.com/media/photo-s/06/90/d0/36/ostriche-scampi-e-molluschi.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'crudità'
@@ -1107,7 +1107,7 @@ return [
         "description" => "Ostriche - 7 pezzi",
         "price" => 30.00,
         "image" => "https://www.cucinare.it/uploads/ricette/2020/07/ostriche-limone-e-pepe.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'ostriche'
@@ -1118,7 +1118,7 @@ return [
         "description" => "Spigola alla catalana",
         "price" => 13.00,
         "image" => "https://media-cdn.tripadvisor.com/media/photo-s/1c/0a/09/96/spigola-alla-catalana.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'spigola-alla-catalana'
@@ -1129,7 +1129,7 @@ return [
         "description" => "Baccalà pomodorini e olive taggiasche",
         "price" => 12.00,
         "image" => "https://www.foodblog.it/wp-content/uploads/2020/03/baccala-in-umido-con-olive-e-capperi.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'baccalà'
@@ -1140,7 +1140,7 @@ return [
         "description" => "Cocktail di gamberi",
         "price" => 10.00,
         "image" => "https://www.cucchiaio.it/content/cucchiaio/it/ricette/2016/11/cocktail-di-gamberi/jcr:content/imagePreview.img10.jpg/1542896153334.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'cocktail-di-gamberi'
@@ -1151,7 +1151,7 @@ return [
         "description" => "Cozze gratinate",
         "price" => 8.00,
         "image" => "https://www.spadellandia.it/upload/ricette/Cozze-gratinate_9822_.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'cozze-gratinate'
@@ -1162,7 +1162,7 @@ return [
         "description" => "Burger di pollo fritto (100gr), salsa tartara, scamorza e bacon.",
         "price" => 9.80,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/kyanloq9qywcnbwtqzqj",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'chicken-bacon-e-scamorza'
@@ -1173,7 +1173,7 @@ return [
         "description" => "Burger di pollo fritto (100gr), maionese, lattuga, bacon, cheddar e la nostra speciale maionese leggermente piccante.",
         "price" => 9.45,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/bn5kqqt1fgbwuhz4sraz",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'chicken-bacon-cheeseburger'
@@ -1184,7 +1184,7 @@ return [
         "description" => "Burger di pollo fritto (100gr), maionese, lattuga, scamorza, uovo fritto e la nostra speciale maionese leggermente piccante.",
         "price" => 9.45,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/p5eruvvtichxrhqbwrhi",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'chicken-uova-cheeseburger'
@@ -1195,7 +1195,7 @@ return [
         "description" => "Burger di pollo fritto (100gr), salsa tartara, lattuga, pomodoro e cetriolini.",
         "price" => 8.75,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/ovscn7qxtyr5ntjos39j",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'chicken-dirty-burger'
@@ -1206,7 +1206,7 @@ return [
         "description" => "Patate dolci",
         "price" => 4.20,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/yg6wak1nemzctrkdz0fw",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'patate-dolci'
@@ -1217,7 +1217,7 @@ return [
         "description" => "Patate rustiche",
         "price" => 4.06,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/usgzjvn2oq7avpqmunfh",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'patate-rustiche'
@@ -1228,7 +1228,7 @@ return [
         "description" => "Il brownie al cioccolato è un classico che non manca mai! *Ti consigliamo di metterlo in microonde per 20 secondi",
         "price" => 4.00,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/fbnzgwzxz6mxw67zo5on",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'brownie'
@@ -1239,7 +1239,7 @@ return [
         "description" => "Coca-Cola Zero 33 cl",
         "price" => 3.00,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/av5pwwku9jzxnchqxoic",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'coca-cola-zero'
@@ -1250,7 +1250,7 @@ return [
         "description" => "Thè al Limone 33 cl",
         "price" => 3.00,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/cayvbzurh3zdkj9bm1ib",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'thè-al-limone'
@@ -1261,7 +1261,7 @@ return [
         "description" => "Acqua Naturale",
         "price" => 2.00,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/dcwb8ybqsitkshsr2e1m",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'acqua-naturale'
@@ -1272,7 +1272,7 @@ return [
         "description" => "SALMAO COM CAMARAO ROLL + CAMARAO ABACATE ROLL + SALMAO ABACATE + TOSTADA DI SALMONE + BOLINHO DE BACALHAU + PASTEL DE CAMARÃO + SALSA BANANA PICCANTE",
         "price" => 39.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/gbovmgeccuxjsmdehqoh",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'ipanema'
@@ -1283,7 +1283,7 @@ return [
         "description" => "CAMARAO EMPANADO + SALMÃO GOSTOSO ROLL + SALMÃO PHILADELPHIA ROLL + PINK NIGIRI + GREEN NIGIRI + CAMARÃO BAIANINHO + PASTEL DE QUEIJO + SALSA BANANA PICCANTE ",
         "price" => 35.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/pttl0gbx88cz6zctassl",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'copacabana'
@@ -1294,7 +1294,7 @@ return [
         "description" => "SALMÃO MEXICANO ROLL + SALMÃO EMPANADO ROLL + CAMARÃO ABACATE ROLL",
         "price" => 30.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/tqdco5issnygcxrvbk5v",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'flamengo-mix-roll'
@@ -1305,7 +1305,7 @@ return [
         "description" => "PIONEIRO ROLL + SALMÃO ABACATE ROLL + CAMARÃO EMPANADO ROLL ",
         "price" => 30.50,
         "image" => "https://admin.iconicxp.com/public/temakinho/feb/media/56f0a6c1-c41b-4273-86c1-4daa50460f0e.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'botafogo-mix-roll'
@@ -1316,7 +1316,7 @@ return [
         "description" => "SALMÃO GOSTOSO ROLL + SALMÃO COM CAMARÃO ROLL + SALMÃO PHILADELPHIA ROLL",
         "price" => 29.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jbsorl8ak5ztajfcxpi3",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'santos-mix-roll'
@@ -1327,7 +1327,7 @@ return [
         "description" => "Mazzancolla  tropicale in tempura, salsa maionese kimchi, erba cipollina",
         "price" => 9.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/pzuwsjs7r2cype1uj5kv",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'saboroso'
@@ -1338,7 +1338,7 @@ return [
         "description" => "Cappasanta* oceanica, riso, alga nori, pasta kataifi, avocado, philadelphia, preparazione di uova di pesce, salsa sriracha, salsa* di maracujá con miso e cachaça",
         "price" => 9.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/nwznu52u2ew3kcnzzgdb",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'maresia'
@@ -1349,7 +1349,7 @@ return [
         "description" => "Mazzancolle tropicali impanate con salsa di banana piccante",
         "price" => 9.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/rhbdn40eglhriakttnfc",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'camarao-baianinho'
@@ -1360,7 +1360,7 @@ return [
         "description" => "Coxinha di pollo, salsa maionese verde",
         "price" => 7.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/u5rjhyajhgl2fddw6jpx",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'coxinha'
@@ -1371,7 +1371,7 @@ return [
         "description" => "Nachos, salsa guacamole, salsa maionese kimchi, pico de gallo",
         "price" => 5.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/lmtxk5uvinhmnwzfdyos",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nachos'
@@ -1382,7 +1382,7 @@ return [
         "description" => "Panino Verde, Maio all'aceto Balsamico di Modena, Cialda di Parmigiano, Rucola, Tagliata di Tonno al Dragoncello, Insalata di Rucola e Pomodorini Mix, Stracciatella al Gorgonzola.",
         "price" => 15.00,
         "image" => "https://media.strooka.com/266/218A2463-Modifica.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'panino-il-tipo-da-spiaggia'
@@ -1393,7 +1393,7 @@ return [
         "description" => "Bistecca di pesce spada arrosto, con melanzana grigliata, pomodoro secco, cipolla caramellata, caciocavallo fuso, rucola e salsa verde.",
         "price" => 15.50,
         "image" => "https://media.strooka.com/266/panino_bistecca_di_pesce_spada1.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'panino-spada'
@@ -1404,7 +1404,7 @@ return [
         "description" => "100g di tartare di tonno, burrata, pomodoro fresco, olio al cappero e pesto di basilico.",
         "price" => 13.50,
         "image" => "https://media.strooka.com/266/5.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'panino-tart-tonno'
@@ -1415,7 +1415,7 @@ return [
         "description" => "250g di polpo fritto, rape, aglio, olio e peperoncino, mosto cotto di fichi, ricotta e pepe, olio alle alici (Il Peso del Polpo si riferisce al Pesce Crudo)",
         "price" => 15.00,
         "image" => "https://media.strooka.com/266/7.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'panino-polpo'
@@ -1426,7 +1426,7 @@ return [
         "description" => "Tartare di salmone, zucchine fritte, fiordilatte, misticanza, pesto pomodoro secco, maionese al peperone arrosto.",
         "price" => 15.00,
         "image" => "https://media.strooka.com/266/panino_tartare_di_salmone.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'panino-tart-salmone'
@@ -1437,7 +1437,7 @@ return [
         "description" => "Tartare di gambero, stracciatella, spinacino, granella di pistacchio, chips di carote di Polignano, maio passion fruit, ceviche croccante (con mela murgina, cipolla rossa, capperi, zenzero, limone, senape).",
         "price" => 14.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/chx9wxiyv259agfavzgt",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'panino-tart-gambero'
@@ -1448,7 +1448,7 @@ return [
         "description" => "Patate fritte servite con porzione di ketchup artigianale e maionese affumicata",
         "price" => 6.50,
         "image" => "https://media.strooka.com/266/chips.png",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'chips-di-patate'
@@ -1459,7 +1459,7 @@ return [
         "description" => "Ortaggi di stagione croccanti serviti con maionese al basilico. Servito con salse.",
         "price" => 7.50,
         "image" => "https://media.strooka.com/266/66.jpeg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'verdurine-fritte'
@@ -1470,7 +1470,7 @@ return [
         "description" => "Carpaccio di salmone con salsa tonnata, frutti di cappero e pomodoro candito.",
         "price" => 16.50,
         "image" => "https://media.strooka.com/266/carpaccio_di_salmone.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'carpaccio-salmone'
@@ -1481,7 +1481,7 @@ return [
         "description" => "Carpaccio di tonno con crudaiola di pomodoro, granella di mandorle, frisa sbriciolata.",
         "price" => 16.50,
         "image" => "https://media.strooka.com/266/Carpaccio_di_tonno2.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'carpaccio-tonno'
@@ -1492,7 +1492,7 @@ return [
         "description" => "Nachos di Mais Croccanti Serviti con Cheddar, Pulled Pork, Fagioli Neri, Jalapeños e Maionese.",
         "price" => 11.90,
         "image" => "https://resizer.deliverect.com/Te0aFKu2f3rH_oa8ygiwPPP3xQRPEzTBeT9PX-u3O7E/rt:fill/w:1024/h:1024/g:ce/el:0/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZ2xvdm9hcHAvZl9hdXRvLHFfYXV0by9Qcm9kdWN0cy9mNWdzb29jdW85NGZjcWd6d2t0ag==",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nachos-pepita'
@@ -1503,7 +1503,7 @@ return [
         "description" => "Nachos di Mais Croccanti Serviti con Crema di Cheddar e Bacon.",
         "price" => 8.40,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/s99pd7oao182hjdmtdbx",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nachos-el-grito'
@@ -1514,7 +1514,7 @@ return [
         "description" => "Nachos di Mais Croccanti Serviti con Crema di Edamer, Spalla di Maiale, Bacon e Fagioli Neri.",
         "price" => 10.50,
         "image" => "https://resizer.deliverect.com/4C5q1oUk7X7-qloK_S2veJPFJsKDftoHfUr_XYyp41w/rt:fill/w:1024/h:1024/g:ce/el:0/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZ2xvdm9hcHAvZl9hdXRvLHFfYXV0by9Qcm9kdWN0cy9vYTVpZWxycnhscXI1MDdkdGthYg==",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nachos-viva-nachos'
@@ -1525,7 +1525,7 @@ return [
         "description" => "Nachos di Mais Croccanti Serviti con Crema di Cheddar, Chili con Carne, Panna acida e Jalapeños.",
         "price" => 6.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/xjydsnxzzu9rztenfwvs",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nachos-viva-macho'
@@ -1536,7 +1536,7 @@ return [
         "description" => "Nachos di Mais Croccanti Serviti con Crema di Parmigiano Reggiano e Ragù Emiliano",
         "price" => 8.40,
         "image" => "https://resizer.deliverect.com/CijORUOU9797oz1GGlUBsBIFGiNrHdY-WMdOUMiEGZo/rt:fill/w:1024/h:1024/g:ce/el:0/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZ2xvdm9hcHAvZl9hdXRvLHFfYXV0by9Qcm9kdWN0cy9sZ2tvazd5N3hhMXZiMDNreHA5bA==",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nachos-mi-tierra'
@@ -1547,7 +1547,7 @@ return [
         "description" => "Nachos di Mais Croccanti Serviti con Crema di edamer",
         "price" => 5.40,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/kopeoepbhrojh07qpynl",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nachos-con-formaggio'
@@ -1558,7 +1558,7 @@ return [
         "description" => "Nachos di Mais Croccanti Serviti con Salsa Rossa e Guacamole",
         "price" => 4.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/oblnisebloqsxqgzayxc",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nachos-dip'
@@ -1569,7 +1569,7 @@ return [
         "description" => "Tortilla di Frumento arrotolata con Riso Bianco, Prosciutto Crudo, Crema di Parmigiano, Mozzarella, Rucola e Olio",
         "price" => 10.90,
         "image" => "https://resizer.deliverect.com/gVGZz95jKfbvG1p0MiXMV5p9N1E2OI2D4g1EaTpNIAE/rt:fill/w:1024/h:1024/g:ce/el:0/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZ2xvdm9hcHAvZl9hdXRvLHFfYXV0by9Qcm9kdWN0cy93aXdtcXVrdHdpeGFmbHdwcmdwZA==",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'burrito-hermano'
@@ -1580,7 +1580,7 @@ return [
         "description" => "Tortilla di Frumento arrotolata con Ripieno di Riso, Crema Parmigiano, Pesto Genovese, Rucola, Bacon, Pollo e Olio",
         "price" => 10.40,
         "image" => "https://resizer.deliverect.com/4Vj02x-Whpd666v8E3tgE1zktX_aHEcsxZVfmT0WE84/rt:fill/w:1024/h:1024/g:ce/el:0/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZ2xvdm9hcHAvZl9hdXRvLHFfYXV0by9Qcm9kdWN0cy9pNmhucms4ZnpnZGhuaXhkZTBwbQ==",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'burrito-del-barrio'
@@ -1591,7 +1591,7 @@ return [
         "description" => "Tortilla di Frumento arrotolata con Ripieno di Riso, Pollo, Bacon, Crema di Parmigiano, Fagioli Neri e Panna acida",
         "price" => 10.10,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/shwfkvkmsh7xbgy1f34w",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'burrito-pablito'
@@ -1602,7 +1602,7 @@ return [
         "description" => "Ali e cosciette di pollo fritte con salsa barbecue",
         "price" => 10.00,
         "image" => "https://www.macelleriasparacello.it/wp-content/uploads/2019/04/ali-di-pollo-in-salsa-barbecue-crude.jpg.webp",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'buffalo-wings'
@@ -1613,7 +1613,7 @@ return [
         "description" => "peperoni messicani ripieni di formaggio, impanati e fritti, serviti con salsa ranchera",
         "price" => 10.00,
         "image" => "https://www.lacasettabio.it/images/ricette/Jalapeno-ripieni.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'jalapenos-rellenos'
@@ -1624,7 +1624,7 @@ return [
         "description" => "panino farcito di chile con carne e senape, accompagnato da insalata mista condita con salsa dressing",
         "price" => 10.00,
         "image" => "https://c8.alamy.com/compit/2atgtjw/panino-di-manzo-arrosto-con-insalata-e-senape-inglese-isolato-su-sfondo-bianco-2atgtjw.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'chili-dogs'
@@ -1635,7 +1635,7 @@ return [
         "description" => "triscioline di manzo e pollo marinate in spezie messicane con cipolle e peperoni, accompagnate da crema di fagioli, pico de gallo, guacamole, formaggio e tortillas di grano",
         "price" => 35.00,
         "image" => "https://labamba123.com/wp-content/uploads/2020/06/ADS_6507.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'fajitas-combo'
@@ -1646,7 +1646,7 @@ return [
         "description" => "striscioline di manzo marinate in spezie messicane con cipolle e peperoni, accompagnate da crema di fagioli, pico de gallo, guacamole, formaggio e tortillas di grano",
         "price" => 35.00,
         "image" => "https://media-cdn.tripadvisor.com/media/photo-s/05/0b/8c/88/combo-fajitas.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'fajitas-sol'
@@ -1657,7 +1657,7 @@ return [
         "description" => "Gamberi speziati, serviti su 3 tortillas di maiz, con guacamole, insalata, pomodori, cipolla, jalapenos, conditi con vinaigrette e accompagnate da riso.",
         "price" => 16.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/shxqfwiyap2fgihtpbww",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tacos-de-gambas'
@@ -1668,7 +1668,7 @@ return [
         "description" => "Tortilla di farina di grano riempita con formaggio e verdure cotte alla griglia, servita con una ricca insalata guacamole sour cream.",
         "price" => 15.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vjky1ga1elivgt5b9zqi",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tortilla-yerba-buena'
@@ -1679,7 +1679,7 @@ return [
         "description" => "Cosciotto di maiale al forno, servito su 3 tortillas di maiz, guarnito con insalata. pomodoro, cipolla, jalapenos e guacamole accompagnati da riso.",
         "price" => 15.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/xcgyrp5qdeq5vle60k0a",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'pulled-pork'
@@ -1690,7 +1690,7 @@ return [
         "description" => "Pastella fritta con zucchero a velo.",
         "price" => 6.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/eagwmwokktlnsxmhhr1w",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'churros'
@@ -1701,7 +1701,7 @@ return [
         "description" => "Pastella fritta con zucchero a velo.",
         "price" => 6.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/eagwmwokktlnsxmhhr1w",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'churros'
@@ -1712,7 +1712,7 @@ return [
         "description" => "triscioline di manzo e pollo marinate in spezie messicane con cipolle e peperoni, accompagnate da crema di fagioli, pico de gallo, guacamole, formaggio e tortillas di grano",
         "price" => 35.00,
         "image" => "https://www.sempliceveloce.it/wordpress/wp-content/uploads/2012/03/ricetta-fajitas-messicane-con-pollo-e-peperoni-640x420.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'fajitas-pollo'
@@ -1723,7 +1723,7 @@ return [
         "description" => "Tortilas di farina ripiena di pollo e manzo marinato, verdure grigliat,e formaggio Cheddar, riso mex e servito con patate fritte",
         "price" => 12.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jrovw2ph3cjh1z3irw26",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'burrito-mixtas'
@@ -1734,7 +1734,7 @@ return [
         "description" => "Tortillas di farina ripiena di pollo marinata verdure grigiate e formaggio cheddar, riso mex, servito con patate fritte ",
         "price" => 12.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/moxkieljtjzml3xytfxr",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'burrito-zone-de-pollo'
@@ -1745,7 +1745,7 @@ return [
         "description" => "Tortillas di mais ripiena di pollo e fomaggia servito con riso mex ",
         "price" => 8.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jclbdlkdnjdaogngvasn",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tacos-de-pollo-y-queso'
@@ -1756,7 +1756,7 @@ return [
         "description" => "Tortillas di farina riera di manzo marinata, verdure grigliate formaggio Cheddar, riso mex. Servito con patate fritte ",
         "price" => 13.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/kzdwebm1icwssebzgfn6",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'burrito-zone-de-manzo'
@@ -1767,7 +1767,7 @@ return [
         "description" => "Tortillas di farina ripiena di riso mex, salmone, purea di fagioli formaggio Cheddar, servito con patate fritte",
         "price" => 14.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/e3gcr19kr8eu1pjf6srr",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'burrito-zone-de-salmone'
@@ -1778,7 +1778,7 @@ return [
         "description" => "Tortillas di farina ripiena di gamberi, riso mex, salsa chipote. Servito con patate fritte ",
         "price" => 14.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/uto5reefuc53lfeb0egd",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'burrito-zone-de-gambas'
@@ -1789,7 +1789,7 @@ return [
         "description" => "Tortillas di farina ripiena di verdure grigliate e riso mex, servito con insalata ",
         "price" => 11.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/yy3ponbn3fkrp9xe880j",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'burrito-zone-light'
@@ -1800,7 +1800,7 @@ return [
         "description" => "Tortillas di farina riera di manzo marinata, verdure grigliate formaggio Cheddar, riso mex e servito con patate fritte",
         "price" => 11.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jwr4iwmotogjtwfznwb1",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'burrito-de-manzo'
@@ -1811,7 +1811,7 @@ return [
         "description" => "Tortillas di mais ripiena di salmone  servite con guacamole",
         "price" => 9.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vm01x0qtop0jndb5bque",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tacos-de-salmon'
@@ -1822,7 +1822,7 @@ return [
         "description" => "Tortillas di farina ripiena di formaggio filante e pollo servito con insalata",
         "price" => 8.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ar2arcyq5qluyojfpzg4",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'quesadillas-de-pollo'
@@ -1833,7 +1833,7 @@ return [
         "description" => "Gamberetti in salsa curry, cipolla e peperoni",
         "price" => 13.00,
         "image" => "https://www.sanjeevkapoor.com/UploadFiles/RecipeImages/KADAI-PRAWNS--skk.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'jhinga-kadai'
@@ -1844,7 +1844,7 @@ return [
         "description" => "bocconcini di montone al curry, piccante",
         "price" => 12.00,
         "image" => "https://cdn.foodaciously.com/static/recipes/86310e62-a773-4240-948a-0eb12cac67ea/sweet-potato-vindaloo-with-lentils-recipe_main-6ea1df71152822d97ef879fbabcc088d-1920.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'ghost-vindaloo'
@@ -1855,7 +1855,7 @@ return [
         "description" => "bocconcini di montone con cipolle, peperoni e salsa",
         "price" => 12.00,
         "image" => "https://www.faskitchen.com/wp-content/uploads/2017/01/SnapShot0.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'ghost-de-piaza'
@@ -1866,7 +1866,7 @@ return [
         "description" => "bocconcini di pollo in salsa piccante",
         "price" => 11.00,
         "image" => "https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Tikka-Masala-min.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'murg-masala '
@@ -1877,7 +1877,7 @@ return [
         "description" => "filetti di pollo in salsa vellutata",
         "price" => 11.00,
         "image" => "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/e9e02c00-b20e-4bd8-9b3b-8f30d8f001ed/Derivates/82a1c4d4-44f6-4a49-b4b8-7675c8aa88c7.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'murg-makhani '
@@ -1888,7 +1888,7 @@ return [
         "description" => "pollo in salsa bianca, anacardi e spezie",
         "price" => 11.00,
         "image" => "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/08/chicken-korma-recipe.jpg.webp",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'murg-korma  '
@@ -1899,7 +1899,7 @@ return [
         "description" => "bocconcini di pollo e piselli in salsa bianca cremosa",
         "price" => 11.00,
         "image" => "https://i0.wp.com/notacurry.com/wp-content/uploads/2014/08/How-to-make-the-best-chicken-bharta-.png?fit=790%2C1193&ssl=1",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'murg-bhartha'
@@ -1910,7 +1910,7 @@ return [
         "description" => "pollo al curry piccante",
         "price" => 10.00,
         "image" => "https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2020/07/Pollo-al-curry-ricetta-0920_link.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'murg-kasalan'
@@ -1921,7 +1921,7 @@ return [
         "description" => "riso Basmati con cumino",
         "price" => 4.00,
         "image" => "https://www.donnad.it/sites/default/files/styles/r_visual_d/public/201810/Come-condire-riso-basmati-semi-cumino.jpg?itok=vUGA1Xnd",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'geera-chawal'
@@ -1932,7 +1932,7 @@ return [
         "description" => "riso Basmati bianco",
         "price" => 3.50,
         "image" => "https://media-assets.lacucinaitaliana.it/photos/61fae1256c9b6de45f7ba8da/3:2/w_1599,h_1066,c_limit/riso-basmati.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'sada-chawal'
@@ -1943,7 +1943,7 @@ return [
         "description" => "Gamberetti con pastella di farina di ceci",
         "price" => 9.00,
         "image" => "https://s3.eu-central-1.amazonaws.com/foodracers/food_racers/services/images/e6d/b86/59-/small/Mixpakora.jpg?1466692154",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'ginga-pakora'
@@ -1954,7 +1954,7 @@ return [
         "description" => "Melanzane fritte in pastella di farina di ceci",
         "price" => 5.00,
         "image" => "https://static.cookist.it/wp-content/uploads/sites/21/2021/09/Pakora.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'bengon-pakora'
@@ -1965,7 +1965,7 @@ return [
         "description" => "Anelli di cipolla fritte in pastella di farina di ceci",
         "price" => 2.50,
         "image" => "https://images.fidhouse.com/fidelitynews/wp-content/uploads/sites/6/2014/10/anelli-di-cipolla.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'ring-pakora'
@@ -1976,7 +1976,7 @@ return [
         "description" => "Pane ripieno di verdure e spezie",
         "price" => 2.50,
         "image" => "https://www.zaykakatadka.com/wp-content/uploads/2019/02/IMG_20190224_110921230_PORTRAIT-1.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'sabzi-pratha'
@@ -1987,7 +1987,7 @@ return [
         "description" => "Pane di farina bianca cotto nel forno Tandoori",
         "price" => 1.50,
         "image" => "https://c8.alamy.com/compit/ewttyf/tandoori-naan-ewttyf.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'nan'
@@ -1998,7 +1998,7 @@ return [
         "description" => "Carne macinato di pollo cotto al forno Tandoori - piccante",
         "price" => 10.00,
         "image" => "https://kfoods.com/images1/newrecipeicon/seekh-kabab_2852.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'seikh-kebab'
@@ -2009,7 +2009,7 @@ return [
         "description" => "Pollo al forno speziato",
         "price" => 9.00,
         "image" => "https://www.whats4eats.com/files/poultry-tandoori-murgh-sxc-sat-bhatti-374848-4x3.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'murg-tandoori'
@@ -2020,7 +2020,7 @@ return [
         "description" => "Carne di agnello con salsa e patate",
         "price" => 12.00,
         "image" => "https://www.yummyoyummy.com/wp-content/uploads/2016/03/Mutton-potato-curry2.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'allo-mutton'
@@ -2031,7 +2031,7 @@ return [
         "description" => "Carne di agnello con aglio, zenzero, pomodoro e spezie",
         "price" => 12.00,
         "image" => "https://jamilghar.com/wp-content/uploads/2022/01/karahigosht34-500x500.jpeg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'mutton-karay'
@@ -2042,7 +2042,7 @@ return [
         "description" => "Carne di agnello con salsa di cipolla pomodoro e zenzero",
         "price" => 12.00,
         "image" => "https://i0.wp.com/blendofspicesbysara.com/wp-content/uploads/2021/03/PXL_20210305_201708388.PORTRAIT-01-1.jpeg?w=800&ssl=1",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'mutton-masala'
@@ -2053,7 +2053,7 @@ return [
         "description" => "Salmone, avocado e Philadelphia",
         "price" => 9.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/jpx0q6gzcsvrhkmfnjph",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'uramaki-sake-philadelphia'
@@ -2064,7 +2064,7 @@ return [
         "description" => "Gambero fritto, salmone e salsa teriyaki all'esterno",
         "price" => 9.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/vbuvphyyownlklc5e2xy",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'uramaki-tiger-roll'
@@ -2075,7 +2075,7 @@ return [
         "description" => "Sashimi salmone - 6 pezzi",
         "price" => 7.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/kujvuc1vhz6hggajk9ml",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'sashimi-salmone'
@@ -2086,7 +2086,7 @@ return [
         "description" => "Ravioli di carne di maiale e verdure alla griglia",
         "price" => 4.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/hfcqmwx4ofrkrkya7rqv",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'gyoza-4-pezzi'
@@ -2097,7 +2097,7 @@ return [
         "description" => "Ravioli di gamberi, verdure e carne al vapore",
         "price" => 3.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/bzgzo74ycjlytmxokpel",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'shaomai-3-pezzi'
@@ -2108,7 +2108,7 @@ return [
         "description" => "Zuppa di soia con salsa piccante, alghe e tofu",
         "price" => 3.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/xuuiaig9crwarldohv2w",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'zuppa-piccante'
@@ -2119,7 +2119,7 @@ return [
         "description" => "Zuppa di soia con salsa piccante, alghe e tofu",
         "price" => 5.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/zd0q3eyrwawvki4chhwp",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'goma-wakame'
@@ -2130,7 +2130,7 @@ return [
         "description" => "Spaghetti di soia saltati con verdure",
         "price" => 5.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/mfj8zcous7huzxagwysm",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'yasai-soia'
@@ -2141,7 +2141,7 @@ return [
         "description" => "Spaghetti di soia saltati con verdure",
         "price" => 5.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/mfj8zcous7huzxagwysm",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'yasai-soia'
@@ -2152,7 +2152,7 @@ return [
         "description" => "Spaghetti di soia saltati con verdure",
         "price" => 5.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/mfj8zcous7huzxagwysm",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'sushi-momo'
@@ -2163,7 +2163,7 @@ return [
         "description" => "Pomodoro San Marzano, bufala DOP, basilico, olio Evo",
         "price" => 9.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/zwcmrwlgo5fkduxfe3xl",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'bufala'
@@ -2174,7 +2174,7 @@ return [
         "description" => "Pomodoro San Marzano, Mozzarella Fior di Latte, Prosciutto Cotto, Carciofi, Olive taggiasche, Funghi,Basilico, Olio Evo",
         "price" => 10.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/bmro5mk62bcsnwxongmp",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'capricciosa'
@@ -2185,7 +2185,7 @@ return [
         "description" => "Pomodoro San Marzano, Mozzarella di Bufala",
         "price" => 12.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ivc9r8loofgri9zxaa7r",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'Caprese-con-Bufala'
@@ -2196,7 +2196,7 @@ return [
         "description" => "Lasagna alla bolognese",
         "price" => 12.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/antoksiuz7owjc9voofw",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'lasagna-alla-bolognese'
@@ -2207,7 +2207,7 @@ return [
         "description" => "Tagliata di filetto al sale profumato con patate",
         "price" => 20.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/m8nxazgiqeryoiabqfad",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'tagliata-di-filetto'
@@ -2218,7 +2218,7 @@ return [
         "description" => "Misticanza, carote, mozzarelline di Bufala, pomodorini con schiacciata calda",
         "price" => 10.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/omax7mf8kqud6rrknlx8",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'insalatona-bufalina'
@@ -2229,7 +2229,7 @@ return [
         "description" => "Patate al forno profumate al Rosmarino",
         "price" => 5.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/kpvmbkqffn6zitr4bxar",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>'patate-al-forno'
@@ -2240,7 +2240,7 @@ return [
         "description" => "Olive all'ascolana - 8 pezzi",
         "price" => 7.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/bhstx4kianxune8afawr",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'Olive-all-ascolana'"
@@ -2251,7 +2251,7 @@ return [
         "description" => "Cannolo alla ricotta con granella di Pistacchio",
         "price" => 7.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/becde4t4iijvnefv8sfk",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'Cannolo-siciliano'"
@@ -2262,7 +2262,7 @@ return [
         "description" => "Tortino al cioccolato con crema al Mascarpone",
         "price" => 6.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/qepjlsw3qdwbtukyp4f2",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'Tortino-al-cioccolato'"
@@ -2273,7 +2273,7 @@ return [
         "description" => "Pomodoro San Marzano dop, fiordilatte di Agerola dop, spianata calabra, olio evo, basilico fresco e grana Padano di 14 mesi",
         "price" => 8.00,
         "image" => "https://www.iffco.it/sites/default/files/styles/free_crop/public/img/recipe/gran-cucina-pizza-diavola.jpg?h=de92a0b7&itok=eC0EvTVI",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'diavola'"
@@ -2284,7 +2284,7 @@ return [
         "description" => "Pomodoro San Marzano dop, mozzarella fiordilatte di Agerola dop, patatine fritte, olio evo, basilico fresco e grana Padano di 14 mesi",
         "price" => 8.00,
         "image" => "https://www.pizzeriagiuseppesalsiera.it/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-19-at-14.03.20.jpeg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'patatosa'"
@@ -2295,7 +2295,7 @@ return [
         "description" => "Pomodoro San Marzano dop, fiordilatte di Agerola dop, prosciutto cotto, funghi freschi, olio evo, basilico fresco e grana Padano di 14 mesi",
         "price" => 8.50,
         "image" => "https://pizzeria2000.it/wp-content/uploads/2019/10/PROSCIUTTO-E-FUNGHI.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'cotto-e-funghi'"
@@ -2306,7 +2306,7 @@ return [
         "description" => "Pomodoro San Marzano dop, mozzarella fiordilatte di Agerola dop, tonno pinne gialle, cipolla di Tropea igp, olio evo, basilico fresco e grana Padano di 14 mesi",
         "price" => 8.50,
         "image" => "https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/05/pizza-pugliese1.png",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'pugliese'"
@@ -2317,7 +2317,7 @@ return [
         "description" => "Pomodoro San Marzano dop, mozzarella fiordilatte di Agerola dop, prosciutto cotto, carciofi, funghi, olio evo, basilico fresco e grana Padano di 14 mesi",
         "price" => 9.00,
         "image" => "https://wips.plug.it/cips/buonissimo.org/cms/2019/09/pizza-capricciosa.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'capricciosa'"
@@ -2328,7 +2328,7 @@ return [
         "description" => "Pomodoro San Marzano dop, aglio, origano di Sicilia, olio evo e basilico fresco",
         "price" => 6.00,
         "image" => "https://cdn.shopify.com/s/files/1/0586/6795/8427/articles/marinara-for-web.jpg?crop=center&height=800&v=1635275961&width=800",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'marinara'"
@@ -2339,7 +2339,7 @@ return [
         "description" => "Pomodoro San Marzano dop, Fiordilatte di Agerola dop, mortadella di Bologna, pesto di pistacchio di Bronte, ricotta di bufala campana, olio evo, basilico fresco e grana Padano di 14 mesi",
         "price" => 10.50,
         "image" => "https://tb-static.uber.com/prod/image-proc/processed_images/e479dcc5cbe57d12285a2324a28b6091/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'pistacchiella'"
@@ -2350,7 +2350,7 @@ return [
         "description" => "Fior di latte di Agerola dop, salsiccia campana, patate al forno con rosmarino, olio evo, basilico fresco e grana Padano di 14 mesi",
         "price" => 10.00,
         "image" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ98RkFY0G133tA1yT07_o6aRiZRXrAccuLpplUrNdONo9MoHtmcioC9QVMK-wIjJNRS4&usqp=CAU",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'pulcinella'"
@@ -2361,7 +2361,7 @@ return [
         "description" => "Fior di latte di Agerola dop, gorgonzola dolce, brie francese, fontina Valdostana, olio evo, basilico fresco e grana Padano di 14 mesi",
         "price" => 9.00,
         "image" => "https://upload.wikimedia.org/wikipedia/commons/a/ad/Pizza_quattro_formaggi_at_restaurant%2C_Chalk_Farm_Road%2C_London.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'quattro-formaggi'"
@@ -2372,7 +2372,7 @@ return [
         "description" => "Pomodoro San Marzano dop, mozzarella fiordilatte di Agerola dop, ricotta di bufala campana, salame Napoli e pepe nero",
         "price" => 10.50,
         "image" => "https://dailywonder.it/wp-content/uploads/2018/08/Pizza.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'pizza-fritta-salame'"
@@ -2383,7 +2383,7 @@ return [
         "description" => "Tortellini fatti in brodo",
         "price" => 12.90,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/zxhayxh5ud6uvidyxehi",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'tortellini-in-brodo'"
@@ -2394,7 +2394,7 @@ return [
         "description" => "Con panna e crema di parmigiano",
         "price" => 12.90,
         "image" => "https://res.cloudinary.com/glovoapp/q_auto,f_auto/Products/m1kfhnke37wk199nuccs",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'tortellini-con-panna-e-crema-di-parmigiano'"
@@ -2405,7 +2405,7 @@ return [
         "description" => "cipollina, aglio, pomodoro corposo, pochissima panna, basilico, peperoncino e olio extravergine d'oliva",
         "price" => 12.90,
         "image" => "https://media-cdn.tripadvisor.com/media/photo-s/0e/b5/e6/66/ristorante-all-antica.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'gnocchi-lucrezia-borgia'"
@@ -2416,7 +2416,7 @@ return [
         "description" => "Tagliatelle al ragù",
         "price" => 12.90,
         "image" => "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/47D03B42-DCAE-405A-8FC0-B2337A5434C8/Derivates/95DAFC47-D6E4-46EF-AD2F-B67EF1FAD85F.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'tagliatelle-al-ragù'"
@@ -2427,7 +2427,7 @@ return [
         "description" => "con ragù bolognese",
         "price" => 12.90,
         "image" => "https://cdn.ilclubdellericette.it/wp-content/uploads/2019/03/Gnocchi-al-Ragu-1280x720.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'gnocchi-al-ragù'"
@@ -2438,7 +2438,7 @@ return [
         "description" => "Scaloppine al Vino",
         "price" => 13.90,
         "image" => "https://static.planeat.eco/media/item_pics/scaloppine-di-pollo-al-vino-bianco-600x400.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'scaloppine-al-vino'"
@@ -2449,7 +2449,7 @@ return [
         "description" => "Prosciutto crudo e crema bolognese",
         "price" => 13.90,
         "image" => "https://www.coopshop.it/p/wp-content/uploads/2023/04/Cotoletta-alla-bolognese-940x450-1.png",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'cotoletta-alla-bolognese'"
@@ -2460,7 +2460,7 @@ return [
         "description" => "con pancetta stufata e formaggio molle",
         "price" => 13.90,
         "image" => "https://i.ytimg.com/vi/wfgkVAgRTS0/maxresdefault.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'cotoletta-sbagliata'"
@@ -2471,7 +2471,7 @@ return [
         "description" => "Scaloppine al Limone",
         "price" => 11.90,
         "image" => "https://www.sfizioso.it/wp-content/uploads/2020/08/scaloppine-al-limone-1.jpg",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'scaloppine-al-Limone'"
@@ -2482,7 +2482,7 @@ return [
         "description" => "Mozzarella, rucola, pomodorini, grana e glassa di aceto balsamico",
         "price" => 11.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/zidgscethggkgijzkngk",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'antares'"
@@ -2493,7 +2493,7 @@ return [
         "description" => "Mozzarella, friarielli, salsiccia e provola affumicata",
         "price" => 11.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/zidgscethggkgijzkngk",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'friarielli-e-salsiccia'"
@@ -2504,7 +2504,7 @@ return [
         "description" => "Pomodoro, mozzarella, crudo, rucola e scaglie di grana",
         "price" => 11.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/tkrctulmwelwxggcfqlx",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'crudaiola'"
@@ -2515,7 +2515,7 @@ return [
         "description" => "Pomodoro, mozzarella, funghi misti, speck e scaglie di grana",
         "price" => 10.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/c5x6n5oiwhnix43zmqjz",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'tirolese'"
@@ -2526,7 +2526,7 @@ return [
         "description" => "Margherita con pomodorini, bufala Doc e tanto basilico aggiunto tutto a fine cottura",
         "price" => 10.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/lqoti3upulbc7wdesqky",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'reginella'"
@@ -2537,7 +2537,7 @@ return [
         "description" => "Pomodoro, mozzarella, melanzane e scaglie di grana",
         "price" => 9.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/rcjxvonfqszygsushiun",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'parmigiana'"
@@ -2548,7 +2548,7 @@ return [
         "description" => "Pomodoro, mozzarella, acciughe, capperi e origano",
         "price" => 9.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/srgyohqcckzi6lionstk",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'romana'"
@@ -2559,7 +2559,7 @@ return [
         "description" => "Pomodoro, mozzarella e salame piccante",
         "price" => 8.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/zbr2e4rmgfxnnic40cq1",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'salame-piccante'"
@@ -2570,7 +2570,7 @@ return [
         "description" => "Pomodoro, mozzarella e salame piccante",
         "price" => 8.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/tdjg1v06j8nsgcktptc2",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'speck'"
@@ -2581,7 +2581,7 @@ return [
         "description" => "Pizza con Nutella",
         "price" => 8.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/fq4caue9zzvtamkjgyaj",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'pizza-con-nutella'"
@@ -2592,7 +2592,7 @@ return [
         "description" => "Hamburger di Scottona",
         "price" => 13.90,
         "image" => "https://formentocarni.it/sites/default/files/styles/square_small/public/2022-08/hamburger-scottona-formentocarni_0.jpg.webp?itok=Ou7rEo1d",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'hamburger-di-scottona'"
@@ -2603,7 +2603,7 @@ return [
         "description" => "Vegetariano. Tradizionali tortelloni di ricotta e prezzemolo, profumati alla noce moscata e fatti a mano conditi con il classico burro e salvia fresca",
         "price" => 9.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/sgbelbwgvztq3ledqhyu",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'tortelloni-al-burro-e-salvia'"
@@ -2614,7 +2614,7 @@ return [
         "description" => "Vegetariano. Tradizionali tortelloni di ricotta e prezzemolo, profumati alla noce moscata e fatti a mano conditi con il classico burro e salvia fresca",
         "price" => 9.00,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/edxliofvtejufrnvxegf",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'tortelloni-al-burro-e-oro'"
@@ -2625,7 +2625,7 @@ return [
         "description" => "pollo disossato",
         "price" => 9.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/qhxozsbph6q0nefzvxha",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'arrosto-di-pollo-disossato'"
@@ -2636,7 +2636,7 @@ return [
         "description" => "Verdure miste",
         "price" => 4.50,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/u5ltvhhqiwxymowsdcui",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'verdure-miste-gratinate-al-forno'"
@@ -2647,7 +2647,7 @@ return [
         "description" => "Sugo di pomodoro, salsiccia, grana padano, 5 polpette. Consigliamo l'aggiunta di guanciale e funghi (tomato sauce, sausage, grana padano, 5 meatballs. We suggest adding guanciale and mushrooms)",
         "price" => 13.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ffgkpwfbgefvqjzggqh6",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'pasta-con-le-polpette'"
@@ -2658,7 +2658,7 @@ return [
         "description" => "Guanciale, pecorino romano, pepe. Consigliamo l'aggiunta di stracciatella e funghi (guanciale, Roman pecorino, pepper. We suggest adding stracciatella and mushrooms)",
         "price" => 13.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/birazkqkdbwiph0ahxqx",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'pasta-con-le-polpette'"
@@ -2669,7 +2669,7 @@ return [
         "description" => "Sugo di pomodoro, guanciale, pecorino romano, peperoncino. Consigliamo l'aggiunta di extra guanciale e stracciatella (tomato sauce, guanciale, Roman pecorino, chili pepper. We suggest adding extra guanciale and stracciatella)",
         "price" => 12.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ywnjj9mdmxijuqox3wpt",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'amatriciana'"
@@ -2680,7 +2680,7 @@ return [
         "description" => "Uovo, guanciale, pecorino romano, pepe. Consigliamo l'aggiunta di extra guanciale, stracciatella e funghi (egg, guanciale, Roman pecorino, pepper. We suggest adding extra guanciale, stracciatella and mushrooms)",
         "price" => 12.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/ly6s8a1qsr2xnlicf9aw",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'Carbonara'"
@@ -2691,7 +2691,7 @@ return [
         "description" => "Pecorino romano, pepe. Consigliamo l'aggiunta di stracciatella e funghi (Roman pecorino, pepper. We suggest adding stracciatella and mushrooms)",
         "price" => 11.90,
         "image" => "https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto:low/Products/y9tojpvhlm225jkgfzv6",
-        "visible"=>'false',
+        "visible"=>'true',
         "gluten_free"=>'false',
         "vegan"=>'false',
         "slug"=>"'cacio-e-pepe'"
