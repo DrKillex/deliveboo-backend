@@ -46,7 +46,7 @@ class ProductController extends Controller
 
     public function getMenu($slug){
         $restaurant = Restaurant::where('slug', $slug)->first();        
-        $products = Product::where('restaurant_id', $restaurant->id)->get();
+        $products = Product::where('restaurant_id', $restaurant->id)->with('restaurant')->get();
         if($products) {
             return response()->json([
                 'success' => true,
