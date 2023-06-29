@@ -155,3 +155,26 @@ body{
         background-color: black;
     }
 }
+
+
+//sezione prodotti ristorante
+
+#title_restaurant{
+    background-color: #FD7E03;
+    color: white;
+    text-transform: uppercase;
+}
+
+#comands_restaurant{
+    border-right: 5px solid #FD7E03;
+    .ms-btn{
+        background-color: #FD7E03;
+        color: white;
+    }
+}
+
+#section_products{
+    #pdt_name{
+        color: black;
+    }
+}

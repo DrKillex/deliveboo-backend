@@ -30,7 +30,7 @@ class UserSeeder extends Seeder
             $users->name = $faker->name();
             $users->email = $faker->email();
             $users->email_verified_at = now();
-            $users->password = Hash::make($users->name . $faker->randomNumber(2));
+            $users->password = Hash::make('password');
             $users->remember_token = Str::random(10);
             $users->save();
         }
