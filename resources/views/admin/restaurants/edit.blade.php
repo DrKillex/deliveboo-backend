@@ -16,7 +16,7 @@
     <section id="section-create">
         <div class="container">
             <div class="row py-4">
-                <h2>Area modifica info del tuo ristorante</h2>
+                <h2>Area modifica informazioni del tuo ristorante</h2>
             </div>
         </div>
     </section>
