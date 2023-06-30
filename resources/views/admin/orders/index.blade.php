@@ -73,7 +73,7 @@
             </table>
         </div>
     </div>
-    <button id="test"><a class="text-decoration-none"
+    {{-- <button id="test"><a class="text-decoration-none"
         href="{{ route('admin.orders.charts') }}">charts</a></button>
     <script>
         const test = document.getElementById('test')
@@ -82,5 +82,5 @@
             console.log({{Js::from($orders)}})
         })
         
-    </script>
+    </script> --}}
 @endsection

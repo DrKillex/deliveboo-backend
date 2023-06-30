@@ -16,6 +16,7 @@
         </div>
     @endif
     {{-- /message Notifica --}}
+
     <section id="title_restaurant" class="py-3">
         <div class="container">
             <div class="row">
@@ -23,6 +24,7 @@
                     <div class="col-4">
                         <img class="img-fluid rounded w-100" src="{{ asset($restaurant->img) }}"
                             alt="{{ $restaurant->name }}">
+
                     </div>
                     <div class="col-8">
                         <h2 class="mx-4 fw-bold">{{ $restaurant->name }}</h2>
@@ -39,6 +41,7 @@
                     <h5>Qui avrai la paronamica del tuo ristorante. Da qui avrai la possibilità di modificare il prodotto o
                         rimuoverlo, cambiare le info del tuo ristorante e tanto altro.</h5>
                 </div>
+
             </div>
         </div>
     </section>
@@ -66,10 +69,12 @@
                                 href="{{ route('admin.orders.charts') }}">Statische prodotti</a></button>
                     </div>
                 </div>
+
                 <div id="section_products" class="col-9">
                     <div class="row gy-5 py-3">
                         @foreach ($products as $product)
                             <div class="col-4">
+
                                 <div class="card ms-card h-100 mx-3 my-2 d-flex">
                                     <div>
                                         <img class="img-fluid ms-img" src="{{ asset($product->image) }}"
@@ -85,6 +90,7 @@
                                             <a href="{{ route('admin.products.edit', $product) }}"
                                                 class="btn btn-sm btn-warning"
                                                 data-bs-target="#product{{ $product->id }}">Modifica</a>
+
 
                                         </div>
                                     </div>
@@ -110,8 +116,10 @@
                                                 id="form">
                                                 @csrf
                                                 @method('DELETE')
+
                                                 <button type="button" class="btn btn-secondary"
                                                     data-bs-dismiss="modal">Torna
+
                                                     Indietro</button>
                                                 <button type="submit" value="elimina" class="btn btn-danger">Rimuovi
                                                     Prodotto</button>
@@ -125,6 +133,7 @@
                     </div>
                 </div>
             </div>
+
 
         </div>
     </section>
