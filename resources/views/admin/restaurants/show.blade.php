@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-auto my-2 d-flex ">
                     <div class="col-4">
-                        <img class="img-fluid rounded w-100" src="{{ asset($restaurant->img) }}"
+                        <img class="img-fluid rounded w-100" src="{{ asset(!str_starts_with($restaurant->img, 'http')? 'http://127.0.0.1:8000/storage/'.$restaurant->img:$restaurant->img) }}"
                             alt="{{ $restaurant->name }}">
 
                     </div>
@@ -77,7 +77,7 @@
 
                                 <div class="card ms-card h-100 mx-3 my-2 d-flex">
                                     <div>
-                                        <img class="img-fluid ms-img" src="{{ asset($product->image) }}"
+                                        <img class="img-fluid ms-img" src="{{ asset(!str_starts_with($product->image, 'http')? 'http://127.0.0.1:8000/storage/'.$product->image:$product->image) }}"
                                             alt="{{ $product->name }}">
                                     </div>
                                     <div class="card-body d-flex align-items-end">
