@@ -30,9 +30,8 @@ class RestaurantSeeder extends Seeder
 
         // RIPETIAMO QUESTA OPERAZIONE PER OGNI CAMPO DELL'ARRAY CONTENUTO NEL FILE
         foreach ($restaurants as $restaurant) {
-            $user = User::inRandomOrder()->first();
             $newRestaurant = new Restaurant();
-            $newRestaurant->user_id = $user->id;
+            $newRestaurant->user_id = $restaurant['user_id'];
             $newRestaurant->name = $restaurant['name'];
             $newRestaurant->slug = Str::slug($newRestaurant->name);
             $newRestaurant->address = $restaurant['address'];

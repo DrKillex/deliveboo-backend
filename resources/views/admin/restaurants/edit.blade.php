@@ -49,7 +49,7 @@
                     <div class="mb-3">
                         <label for="email" class="form-label">Email ristorante:</label>
                         <input type="email" class="form-control" id="email" name="email"
-                            placeholder="inserisci email" required  minlength="1" maxlength="100" value="{{ old('email', $restaurant->email) }}">
+                            placeholder="inserisci email" minlength="1" maxlength="100" value="{{ old('email', $restaurant->email) }}">
                     </div>
                     <div class="mb-3">
                         <label for="p_iva" class="form-label">Partita Iva:</label>
