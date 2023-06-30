@@ -296,3 +296,18 @@ table {
         }
     }
 }
+
+#section-create{
+    background-color: #FD7E03;
+    h2{
+        color: white;
+        font-weight: 800;
+    }
+}
+
+#create-product{
+    input,
+    textarea{
+        border: .0625rem solid #FD7E03;
+    }
+}
