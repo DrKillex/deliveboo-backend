@@ -35,7 +35,7 @@ class ProductSeeder extends Seeder
             $newProduct->description = $product['description'];
             $newProduct->price = $product['price'];
             $newProduct->image = $product['image'];
-            $newProduct->visible = 0;
+            $newProduct->visible = 1;
             $newProduct->gluten_free = 0;
             $newProduct->vegan = 0;
             $newProduct->slug = Str::slug($newProduct->name, '-');
