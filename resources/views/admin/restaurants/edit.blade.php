@@ -14,7 +14,7 @@
         @endif
         {{-- validazione errori --}}
 
-        <div class="container">
+        <div class="container ">
             <div class="row">
                 <form action="{{ route('admin.restaurants.update', $restaurant) }}" method="POST" enctype="multipart/form-data"
                     class="form-input-image">
