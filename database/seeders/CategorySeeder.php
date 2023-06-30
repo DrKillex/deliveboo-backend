@@ -28,6 +28,7 @@ class CategorySeeder extends Seeder
             $newCategory = new Category();
             $newCategory->name = $category['name'];
             $newCategory->description = $category['description'];
+            $newCategory->img = $category['img'];
             $newCategory->slug = Str::slug($newCategory->name);
             $newCategory->save();
         }
