@@ -1,13 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+<div id="title_restaurant" class="py-3">
     <div class="container">
         <div class="row">
             <h3 class="mt-3">{{ $restaurant->name }}</h3>
         </div>
+    </div>
+</div>
+    <div class="container">
+        <div class="mt-3">
+            <h4>Qui avrai a disposizione la paronamica degli ordini ricevuti</h4>
+        </div>
         <div class="row">
-            <table class="table">
-                <thead>
+            <table class="table table-hover">
+                <thead id="title-table">
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Nome</th>
@@ -25,7 +32,7 @@
                     @foreach ($orders as $order)
                         <tr>
                             <td>
-                                {{ $order->id }}
+                               <div> {{ $order->id }}</div>
                             </td>
                             <td>
                                 {{ $order->name }}
@@ -42,26 +49,23 @@
                             <td>
                                 {{ $order->address }}
                             </td>
-                            <td>
+                            <td class="text-center">
                                 {{ $order->payment_state }}
                             </td>
-                            <td>
+                            <td class="col-3">
                                 {{ $order->created_at }}
                             </td>
-                            <td>
-                                {{ $order->payment_state }}
-                            </td>
-                            <td>
-                                <ul>
+                            <td class="col-4">
+                                <ul class="list-unstyled">
                                   @foreach ($order->products as $product)
                                   <li>
-                                    <div>{{ $product->name }} x {{ $product->pivot->quantity }}</div>
+                                    <div>{{ $product->name }} (x {{ $product->pivot->quantity }})</div>
                                   </li>
                                   @endforeach
                                 </ul>
                             </td>
                             <td>
-                                {{ $order->total_price }}
+                                <h5>{{ $order->total_price }}€</h5>
                             </td>
                         </tr>
                     @endforeach

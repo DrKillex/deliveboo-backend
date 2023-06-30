@@ -7,16 +7,17 @@
 // }
 
 // Preview Upload-Image Box non visibile
-.preview{
+.preview {
     #file-image-preview {
-    display: none;
-}
+        display: none;
+    }
 }
 
 // Font
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
+
 // Header
 .container {
     max-width: 1200px;
@@ -159,22 +160,33 @@ body{
 
 //sezione prodotti ristorante
 
-#title_restaurant{
+#title_restaurant {
     background-color: #FD7E03;
     color: white;
     text-transform: uppercase;
 }
 
-#comands_restaurant{
+#comands_restaurant {
     border-right: 5px solid #FD7E03;
-    .ms-btn{
+
+    .ms-btn {
         background-color: #FD7E03;
         color: white;
     }
 }
 
-#section_products{
-    #pdt_name{
+#section_products {
+    #pdt_name {
         color: black;
+    }
+}
+
+table {
+    #title-table {
+        th {
+            text-transform: uppercase;
+            color: #FD7E03;
+           
+        }
     }
 }

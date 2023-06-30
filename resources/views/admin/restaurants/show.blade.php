@@ -29,16 +29,16 @@
                     </div>
                 </div>
                 <div class="col-7">
-                    <div class="">
                         <button class="btn ms-btn"><a class="nav-link"
                                 href="{{ route('admin.restaurants.edit', $restaurant) }}">Modifica ristorante</a></button>
-                    </div>
                 </div>
                 <div class="col-7">
-                    <div class="">
                         <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.orders.index') }}">Visualizza
                                 Ordini</a></button>
-                    </div>
+                </div>
+                <div class="col-7">
+                    <button id="test" class="btn ms-btn"><a class="nav-link"
+                            href="{{ route('admin.orders.charts') }}">charts</a></button>
                 </div>
             </div>
             <div id="section_products" class="col-9">

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <button id="test">aaaaa</button>
     {{-- <script>
         const test = document.getElementById('test')
         test.addEventListener('click', function() {
@@ -9,10 +8,25 @@
             console.log({{ Js::from($products) }})
         })
     </script> --}}
-
+    <div id="title_restaurant" class="py-3">
+        <div class="container">
+            <div class="row">
+                <h3 class="mt-3">Statische prodotti</h3>
+            </div>
+        </div>
+    </div>
+    {{-- <div class="container">
+        <div class="row">
+            <h3 class="mt-3">Statische prodotti</h3>
+            <p>Qui sarà possibile visualizzare la quantità per ogni prodotto ordinato</p>
+        </div>
+    </div> --}}
     <div>
         <div class="container">
             <div class="row">
+                <div class="mt-3">
+                    <h4>Qui sarà possibile visualizzare la quantità per ogni prodotto ordinato.</h4>
+                </div>
                 <div>
                     <canvas id="myChart"></canvas>
                 </div>
@@ -26,7 +40,7 @@
             console.log(products)
             const productsName = products.map(product => product.name)
             // console.log(productsName)
-            
+
             const productsOrder = products.map(product => {
                 let ordered = 0;
                 product.orders.forEach(order => {
