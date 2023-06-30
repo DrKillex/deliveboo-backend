@@ -1,11 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 
 
-// img{
-//     width: 300px;
-//     height: 200px;
-// }
-
 // Preview Upload-Image Box non visibile
 .preview {
     #file-image-preview {
@@ -188,5 +183,35 @@ table {
             color: #FD7E03;
            
         }
+    }
+}
+#title_restaurant{
+    img{
+        width: 350px;
+    }
+}
+
+
+.ms-img {
+    border-radius: 20px;
+    width: 288px;
+    height: 200px;
+    box-shadow: 0px 0px 16px 0px black;
+}
+
+.ms-card{
+    border: none;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1)
     }
 }

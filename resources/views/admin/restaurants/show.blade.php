@@ -17,9 +17,22 @@
     @endif
     {{-- /message Notifica --}}
     <div id="title_restaurant" class="py-3">
-        <h2 class="my-3 text-center my-5">Nome Ristorante: {{ $restaurant->name }}</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-auto mx-3 my-2 d-flex ">
+                    <div class="col-4">
+                        <img class="img-fluid rounded w-100" src="{{ asset($restaurant->img) }}" alt="{{ $restaurant->name }}">
+                    </div>
+                    <div class="col-8">
+                        <h2 class="mx-4 fw-bold">{{ $restaurant->name }}</h2>
+                        <p class="mx-4 fw-bold">{{ $restaurant->description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container-fluid">
+    </div>
+    <div class="container">
         <div class="row">
             <div id="comands_restaurant" class="col-3 py-3 d-flex flex-column align-items-center gap-3">
                 <div class="col-7">
@@ -44,19 +57,21 @@
             <div id="section_products" class="col-9">
                 <div class="row gy-5 py-3">
                     @foreach ($products as $product)
-                        <div class="col-3">
-                            <div class="card h-100 mx-3 d-flex">
+                        <div class="col-4">
+                            <div class="card ms-card h-100 mx-3 my-2 d-flex">
                                 <div>
-                                    <img class="img-fluid" src="{{ asset($product->image) }}" alt="{{ $product->name }}">
+                                    <img class="img-fluid ms-img" src="{{ asset($product->image) }}"
+                                        alt="{{ $product->name }}">
                                 </div>
                                 <div class="card-body d-flex align-items-end">
                                     <div class=" mt-auto">
-                                        <h5 class="card-title"><a id="pdt_name" class="text-decoration-none"
-                                                href="{{ route('admin.products.show', $product) }}">{{ $product->name }}</a>
-                                        </h5>
+                                        <h4 class="card-title">{{ $product->name }}
+                                        </h4>
+                                        <h5>{{ $product->price }}€</h5>
                                         <a href="#" class="btn btn-sm btn-danger" data-bs-toggle="modal"
                                             data-bs-target="#product{{ $product->id }}">Rimuovi</a>
-                                        <a href="{{ route('admin.products.edit', $product) }}" class="btn btn-sm btn-warning"
+                                        <a href="{{ route('admin.products.edit', $product) }}"
+                                            class="btn btn-sm btn-warning"
                                             data-bs-target="#product{{ $product->id }}">Modifica</a>
 
                                     </div>
