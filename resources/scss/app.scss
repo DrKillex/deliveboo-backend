@@ -158,19 +158,29 @@ body {
 #title_restaurant {
     background-color: #FD7E03;
     color: white;
-    text-transform: uppercase;
+
+    h2 {
+        text-transform: uppercase;
+    }
 }
 
 #comands_restaurant {
-    border-right: 5px solid #FD7E03;
+    // border-right: 5px solid #FD7E03;
+    background-color: white;
 
     .ms-btn {
         background-color: #FD7E03;
         color: white;
     }
+
+    button {
+        font-size: 26px;
+    }
 }
 
 #section_products {
+    background-color: white;
+
     #pdt_name {
         color: black;
     }
@@ -181,12 +191,13 @@ table {
         th {
             text-transform: uppercase;
             color: #FD7E03;
-           
+
         }
     }
 }
-#title_restaurant{
-    img{
+
+#title_restaurant {
+    img {
         width: 350px;
     }
 }
@@ -199,7 +210,7 @@ table {
     box-shadow: 0px 0px 16px 0px black;
 }
 
-.ms-card{
+.ms-card {
     border: none;
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
@@ -213,5 +224,75 @@ table {
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1)
+    }
+}
+
+#main-products {
+    background-color: #FD7E03;
+}
+
+#section-descr {
+    border: .3125rem solid #FD7E03;
+
+}
+
+.logo{
+    h1{
+        display: flex;
+        align-items: center;
+        color: #FD7E03;
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+
+        .navbar-links {
+            width: 100%;
+            padding-top: 30px;
+            background: white;
+            height: 100vh;
+            max-width: 100%;
+            transform: translate(-150%);
+            display: flex;
+            flex-direction: column;
+            // animazione comparsa menu hamburger
+            transition: transform 0.5s ease-in-out;
+
+            // /animazione comparsa menu hamburger
+            li {
+                margin-bottom: 2rem;
+                padding-right: 60px;
+
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .navbar-container input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    }
+
+    .navbar-container {
+        height: 64px;
+        // min-width: 280px;
+
+
+
+        .logo {
+            h1 {
+                font-size: 15.9px;
+                padding-right: 5px;
+            }
+        }
     }
 }
