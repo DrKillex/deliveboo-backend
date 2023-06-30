@@ -23,12 +23,21 @@
     </div> --}}
     <div>
         <div class="container">
-            <div class="row">
+            <div class="row mt-5">
                 <div class="mt-3">
-                    <h4>Qui sarà possibile visualizzare la quantità per ogni prodotto ordinato.</h4>
+                    
                 </div>
-                <div>
-                    <canvas id="myChart"></canvas>
+                <div class="col-2">
+                    <div id="comands_restaurant">
+                        <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">torna alla
+                                dashboard</a></button>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <h4 class="px-5">Qui sarà possibile visualizzare la quantità per ogni prodotto ordinato.</h4>
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
