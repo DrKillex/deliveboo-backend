@@ -83,14 +83,14 @@
                     <div class="mb-3">
                         <label for="image" class="form-label">Immagine ristorante:</label>
                         <input class="form-control" type="file" id="image" name="img"
-                            value="{{ old('opening_hours', $restaurant->image) }}">
+                            value="{{ old('img', $restaurant->img) }}">
                     </div>
                     {{-- Image Preview Upload --}}
-                    <div class="preview">
-                        <img id="file-image-preview">
-                    </div>
                     <div id="comands_restaurant">
                         <button type="submit" class="btn ms-btn mt-3">Modifica</button>
+                    </div>
+                    <div>
+                        <img id="file-image-preview"  class="img-fluid @if($restaurant->img)mt-4 mb-3 @endif" @if($restaurant->img) src="{{ asset(!str_starts_with($restaurant->img, 'http')? 'http://127.0.0.1:8000/storage/'.$restaurant->img:$restaurant->img) }}" @endif>
                     </div>
                 </form>
             </div>

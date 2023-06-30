@@ -14,7 +14,6 @@ if (document.querySelector('.form-input-image')) {
     const imageInput = document.querySelector('#image');
     imageInput.addEventListener('change', showPreviewProduct);
 }
-
 // show preview upload image function Product
 function showPreviewProduct(event) {
     if (event.target.files.length > 0) {
@@ -22,6 +21,7 @@ function showPreviewProduct(event) {
         const preview = document.getElementById("file-image-preview");
         preview.src = src;
         preview.style.display = "block";
+        preview.classList.add('mt-4', 'mb-3');
     }
 }
 

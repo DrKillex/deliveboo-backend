@@ -60,7 +60,7 @@
         {{-- show image upload --}}
         <div id="image_input_container">
             <div class="preview-edit">
-                <img id="file-image-preview" @if ($product->image) src="{{ asset($product->image) }}" alt="{{ $product->name }}" @endif>
+                <img id="file-image-preview" @if ($product->image) src="{{asset(!str_starts_with($product->image, 'http')? 'http://127.0.0.1:8000/storage/'.$product->image:$product->image) }}" alt="{{ $product->name }}" @endif>
             </div>
         </div>
 
