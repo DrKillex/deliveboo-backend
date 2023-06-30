@@ -29,12 +29,12 @@
                     </div>
                 </div>
                 <div class="col-7">
-                        <button class="btn ms-btn"><a class="nav-link"
-                                href="{{ route('admin.restaurants.edit', $restaurant) }}">Modifica ristorante</a></button>
+                    <button class="btn ms-btn"><a class="nav-link"
+                            href="{{ route('admin.restaurants.edit', $restaurant) }}">Modifica ristorante</a></button>
                 </div>
                 <div class="col-7">
-                        <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.orders.index') }}">Visualizza
-                                Ordini</a></button>
+                    <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.orders.index') }}">Visualizza
+                            Ordini</a></button>
                 </div>
                 <div class="col-7">
                     <button id="test" class="btn ms-btn"><a class="nav-link"
@@ -56,6 +56,8 @@
                                         </h5>
                                         <a href="#" class="btn btn-sm btn-danger" data-bs-toggle="modal"
                                             data-bs-target="#product{{ $product->id }}">Rimuovi</a>
+                                        <a href="{{ route('admin.products.edit', $product) }}" class="btn btn-sm btn-warning"
+                                            data-bs-target="#product{{ $product->id }}">Modifica</a>
 
                                     </div>
                                 </div>
