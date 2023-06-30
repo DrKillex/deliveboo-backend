@@ -1,76 +1,86 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="title_restaurant" class="py-3">
-    <div class="container">
-        <div class="row">
-            <h3 class="mt-3">{{ $restaurant->name }}</h3>
+    <div id="title_restaurant" class="py-3">
+        <div class="container">
+            <div class="row">
+                <h3 class="mt-3">{{ $restaurant->name }}</h3>
+            </div>
         </div>
     </div>
-</div>
+
     <div class="container">
-        <div class="mt-3">
-            <h4>Qui avrai a disposizione la paronamica degli ordini ricevuti</h4>
-        </div>
+
         <div class="row">
-            <table class="table table-hover">
-                <thead id="title-table">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Cognome</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Telefono</th>
-                        <th scope="col">Indirizzo</th>
-                        <th scope="col">Stato Pagamento</th>
-                        <th scope="col">Data</th>
-                        <th scope="col">Prodotti ordinati</th>
-                        <th scope="col">Totale</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($orders as $order)
+            <div class="col-2 mt-5 py-4">
+                <div id="comands_restaurant">
+                    <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">torna alla
+                            dashboard</a></button>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="mt-3">
+                    <h4>Qui avrai a disposizione la paronamica degli ordini ricevuti</h4>
+                </div>
+                <table class="table table-hover">
+                    <thead id="title-table">
                         <tr>
-                            <td>
-                               <div> {{ $order->id }}</div>
-                            </td>
-                            <td>
-                                {{ $order->name }}
-                            </td>
-                            <td>
-                                {{ $order->surname }}
-                            </td>
-                            <td>
-                                {{ $order->email }}
-                            </td>
-                            <td>
-                                {{ $order->telephone }}
-                            </td>
-                            <td>
-                                {{ $order->address }}
-                            </td>
-                            <td class="text-center">
-                                {{ $order->payment_state }}
-                            </td>
-                            <td class="col-3">
-                                {{ $order->created_at }}
-                            </td>
-                            <td class="col-4">
-                                <ul class="list-unstyled">
-                                  @foreach ($order->products as $product)
-                                  <li>
-                                    <div>{{ $product->name }} (x {{ $product->pivot->quantity }})</div>
-                                  </li>
-                                  @endforeach
-                                </ul>
-                            </td>
-                            <td>
-                                <h5>{{ $order->total_price }}€</h5>
-                            </td>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Cognome</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Indirizzo</th>
+                            <th scope="col">Stato Pagamento</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Prodotti ordinati</th>
+                            <th scope="col">Totale</th>
                         </tr>
-                    @endforeach
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @foreach ($orders as $order)
+                            <tr>
+                                <td>
+                                    <div> {{ $order->id }}</div>
+                                </td>
+                                <td>
+                                    {{ $order->name }}
+                                </td>
+                                <td>
+                                    {{ $order->surname }}
+                                </td>
+                                <td>
+                                    {{ $order->email }}
+                                </td>
+                                <td>
+                                    {{ $order->telephone }}
+                                </td>
+                                <td>
+                                    {{ $order->address }}
+                                </td>
+                                <td class="text-center">
+                                    {{ $order->payment_state }}
+                                </td>
+                                <td class="col-3">
+                                    {{ $order->created_at }}
+                                </td>
+                                <td class="col-4">
+                                    <ul class="list-unstyled">
+                                        @foreach ($order->products as $product)
+                                            <li>
+                                                <div>{{ $product->name }} (x {{ $product->pivot->quantity }})</div>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </td>
+                                <td>
+                                    <h5>{{ $order->total_price }}€</h5>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     {{-- <button id="test"><a class="text-decoration-none"

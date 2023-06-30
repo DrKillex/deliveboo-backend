@@ -187,10 +187,13 @@ body {
 }
 
 table {
+    font-size: 15px;
+
     #title-table {
         th {
             text-transform: uppercase;
             color: #FD7E03;
+
 
         }
     }
@@ -229,15 +232,37 @@ table {
 
 #main-products {
     background-color: #FD7E03;
+
+    #comands_restaurant{
+        background-color: white;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        .back-products {
+            border: .0625rem solid white;
+            border-radius: 25px;
+        }
+    }
+    #section_products{
+        background-color: white;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
 }
 
 #section-descr {
     border: .3125rem solid #FD7E03;
+    background-color: #FD7E03;
 
+    div.row {
+        background-color: white;
+        border-radius: 25px;
+        padding: 15px 50px;
+
+    }
 }
 
-.logo{
-    h1{
+.logo {
+    h1 {
         display: flex;
         align-items: center;
         color: #FD7E03;
@@ -297,17 +322,19 @@ table {
     }
 }
 
-#section-create{
+#section-create {
     background-color: #FD7E03;
-    h2{
+
+    h2 {
         color: white;
         font-weight: 800;
     }
 }
 
-#create-product{
+#create-product {
+
     input,
-    textarea{
+    textarea {
         border: .0625rem solid #FD7E03;
     }
 }

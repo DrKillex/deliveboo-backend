@@ -22,7 +22,8 @@
             <div class="row">
                 <div class="col-auto my-2 d-flex ">
                     <div class="col-4">
-                        <img class="img-fluid rounded w-100" src="{{ asset(!str_starts_with($restaurant->img, 'http')? 'http://127.0.0.1:8000/storage/'.$restaurant->img:$restaurant->img) }}"
+                        <img class="img-fluid rounded w-100"
+                            src="{{ asset(!str_starts_with($restaurant->img, 'http') ? 'http://127.0.0.1:8000/storage/' . $restaurant->img : $restaurant->img) }}"
                             alt="{{ $restaurant->name }}">
 
                     </div>
@@ -36,7 +37,7 @@
     </section>
     <section id="section-descr">
         <div class="container">
-            <div class="row py-3">
+            <div class="row my-4">
                 <div>
                     <h5>Qui avrai la paronamica del tuo ristorante. Da qui avrai la possibilità di modificare il prodotto o
                         rimuoverlo, cambiare le info del tuo ristorante e tanto altro.</h5>
@@ -48,8 +49,8 @@
     <section id="main-products">
         <div class="container">
 
-            <div class="row">
-                <div id="comands_restaurant" class="col-3 py-3 d-flex flex-column align-items-start gap-3">
+            <div class="row back-products">
+                <div id="comands_restaurant" class="col-3 px-4 py-3 d-flex flex-column align-items-start gap-3">
                     <div class="col-10">
                         <div>
                             <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.products.create') }}">Nuovo
@@ -77,7 +78,8 @@
 
                                 <div class="card ms-card h-100 mx-3 my-2 d-flex">
                                     <div>
-                                        <img class="img-fluid ms-img" src="{{ asset(!str_starts_with($product->image, 'http')? 'http://127.0.0.1:8000/storage/'.$product->image:$product->image) }}"
+                                        <img class="img-fluid ms-img"
+                                            src="{{ asset(!str_starts_with($product->image, 'http') ? 'http://127.0.0.1:8000/storage/' . $product->image : $product->image) }}"
                                             alt="{{ $product->name }}">
                                     </div>
                                     <div class="card-body d-flex align-items-end">
@@ -90,6 +92,11 @@
                                             <a href="{{ route('admin.products.edit', $product) }}"
                                                 class="btn btn-sm btn-warning"
                                                 data-bs-target="#product{{ $product->id }}">Modifica</a>
+                                            <a href="{{ route('admin.products.show', $product) }}"
+                                                class="btn btn-sm btn-success my-2"
+                                                data-bs-target="#product{{ $product->id }}">Dettaglio</a>
+
+
 
 
                                         </div>
