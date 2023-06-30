@@ -106,10 +106,11 @@ class RestaurantController extends Controller
                 Storage::delete($restaurant->img);
             }
             $data['img'] = Storage::put('uploads', $data['img']);
-        }        
+        }  
         $categories = isset($data['categories']) ? $data['categories'] : [];
         $restaurant->categories()->sync($categories);
-        $restaurant->update($data);
+        $restaurant->img = $data['img'];
+        $restaurant->update($data); 
         return redirect()->route('admin.dashboard');
     }
 

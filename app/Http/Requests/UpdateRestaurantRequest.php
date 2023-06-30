@@ -37,7 +37,7 @@ class UpdateRestaurantRequest extends FormRequest
             'p_iva' => 'nullable|max:11|string',
             'description' => 'nullable',
             'opening_hours' => 'nullable',
-            'img' => 'nullable|image|max:2048|mimes:jpeg,jpg,png,gif',
+            'img' => 'nullable',
             'categories'=>'exists:categories,id',
         ];
     }

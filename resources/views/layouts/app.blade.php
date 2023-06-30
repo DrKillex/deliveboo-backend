@@ -71,10 +71,11 @@
                             
                         </ul>
                         <div class="logo d-flex align-items-center mx-3">
-                            <a href="http://localhost:5174/">
+                            <a href="http://localhost:5173/" class="d-flex text-decoration-none">
                                 <img src="https://cdn.discordapp.com/attachments/1120303634509484046/1123555746026639400/logo.png" alt="Logo" width="100" class="d-inline-block align-text-top">
+                                <h1 class="mb-0 fs-3 fw-bold">FOOD FOR ALL</h1>
                             </a>
-                            <h1 class="mb-0 fs-3 fw-bold">FOOD FOR ALL</h1>
+                           
                         </div>
                         <!-- /navbar collegamenti -->
                     </div>
