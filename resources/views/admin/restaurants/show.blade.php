@@ -47,19 +47,19 @@
         </div>
     </section>
     <section id="main-products">
-        <div class="container">
+        <div class="container py-3">
 
             <div class="row back-products">
                 <div id="comands_restaurant" class="col-3 px-4 py-3 d-flex flex-column align-items-start gap-3">
                     <div class="col-10">
                         <div>
                             <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.products.create') }}">Nuovo
-                                    prodotto</a></button>
+                                    Prodotto</a></button>
                         </div>
                     </div>
                     <div class="col-10">
                         <button class="btn ms-btn"><a class="nav-link"
-                                href="{{ route('admin.restaurants.edit', $restaurant) }}">Modifica ristorante</a></button>
+                                href="{{ route('admin.restaurants.edit', $restaurant) }}">Modifica Ristorante</a></button>
                     </div>
                     <div class="col-10">
                         <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.orders.index') }}">Visualizza
@@ -67,7 +67,7 @@
                     </div>
                     <div class="col-10">
                         <button id="test" class="btn ms-btn"><a class="nav-link"
-                                href="{{ route('admin.orders.charts') }}">Statische prodotti</a></button>
+                                href="{{ route('admin.orders.charts') }}">Statistiche Prodotti</a></button>
                     </div>
                 </div>
 

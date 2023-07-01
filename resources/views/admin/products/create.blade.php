@@ -25,7 +25,7 @@
         <div class="row mt-4">
             <div class="col-3">
                 <div id="comands_restaurant">
-                    <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">torna alla
+                    <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">Torna alla
                             dashboard</a></button>
                 </div>
             </div>
