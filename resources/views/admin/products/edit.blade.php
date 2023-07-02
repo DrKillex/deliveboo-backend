@@ -23,13 +23,13 @@
     </section>
     <div class="container">
         <div class="row py-3">
-            <div class="col">
+            <div class="col-2">
                 <div id="comands_restaurant">
                     <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">torna alla
                             dashboard</a></button>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-10">
                 <form id="create-product" action="{{ route('admin.products.update', $product) }}" method="POST"
                     enctype="multipart/form-data" class="form-input-image">
                     @csrf
