@@ -59,7 +59,7 @@
                                     {{ $order->address }}
                                 </td>
                                 <td class="text-center">
-                                    {{ $order->payment_state }}
+                                    {{ $order->payment_state == 0 ? '❌' : '✔' }}
                                 </td>
                                 <td class="col-3">
                                     {{ $order->created_at }}

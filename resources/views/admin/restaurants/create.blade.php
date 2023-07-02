@@ -21,7 +21,7 @@
         <div class="container pt-4">
             <div class="row">
                 <form action="{{ route('admin.restaurants.store') }}" method="POST" enctype="multipart/form-data"
-                    class="form-input-image">
+                    class="form-input-image" id="create-product">
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome ristorante:</label>
@@ -72,7 +72,9 @@
                     <div class="preview">
                         <img id="file-image-preview">
                     </div>
-                    <button class="btn btn-primary">Aggiungi</button>
+                    <div id="comands_restaurant">
+                        <button type="submit" class="btn ms-btn mt-3">Modifica</button>
+                    </div>
                 </form>
             </div>
 
