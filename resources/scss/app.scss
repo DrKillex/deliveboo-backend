@@ -1,6 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 
-
 // Preview Upload-Image Box non visibile
 .preview {
     #file-image-preview {
@@ -347,5 +346,63 @@ div.card{
     border: 1px solid #FD7E03;
     .card-header{
         background-color: rgba(253, 126, 3, 0.5);
+    }
+}
+
+// foooter 
+
+
+.footer {
+    background-color: #EEEDE9;
+    color: black;
+
+    .logo {
+        img {
+            width: 140px;
+        }
+    }
+
+    p{
+            margin-bottom: .3125rem;
+        }
+    .social {
+        li {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #FD7E03; 
+            color: white;
+        }
+        li:hover {
+            cursor: pointer;
+            color: #EEEDE9;
+        }
+
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            margin-top: 5px;
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(71, 71, 71);
+
+                img {
+                    width: 150px;
+                }
+            }
+        }
     }
 }
