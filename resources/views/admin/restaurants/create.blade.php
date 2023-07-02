@@ -17,7 +17,14 @@
             </div>
         @endif
         {{-- validazione errori --}}
-
+        
+        <section id="section-create">
+            <div class="container">
+                <div class="row py-4">
+                    <h2>Inserisci i dati del tuo ristorante</h2>
+                </div>
+            </div>
+        </section>
         <div class="container pt-4">
             <div class="row">
                 <form action="{{ route('admin.restaurants.store') }}" method="POST" enctype="multipart/form-data"
@@ -73,7 +80,7 @@
                         <img id="file-image-preview">
                     </div>
                     <div id="comands_restaurant">
-                        <button type="submit" class="btn ms-btn mt-3">Modifica</button>
+                        <button type="submit" class="btn ms-btn mt-3 mb-3">Crea</button>
                     </div>
                 </form>
             </div>
