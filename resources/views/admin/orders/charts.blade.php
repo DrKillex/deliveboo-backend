@@ -53,7 +53,10 @@
             const productsOrder = products.map(product => {
                 let ordered = 0;
                 product.orders.forEach(order => {
-                    ordered += order.pivot.quantity
+                    if(order.payment_state===1){
+                        ordered += order.pivot.quantity
+                    }
+                    
                 });
                 return ordered;
             })

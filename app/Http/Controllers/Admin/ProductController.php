@@ -83,9 +83,11 @@ class ProductController extends Controller
                 Storage::delete($product->image);
             }
             $data['image'] = Storage::put('uploads', $data['image']);
+            $product->image = $data['image'];
         }
         // immagine
-        $product->image = $data['image'];
+
+        
         $product->update($data);
         return redirect()->route('admin.restaurants.show', compact('restaurant'))->with('message', "Prodotto con [Nome: $product->name] , [Id: $product->id] è stato modificato con successo");
     }
