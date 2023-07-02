@@ -11,7 +11,7 @@
     <div id="title_restaurant" class="py-3">
         <div class="container">
             <div class="row">
-                <h3 class="mt-3">Statische prodotti</h3>
+                <h3 class="mt-3">Statistiche prodotti</h3>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-2">
                     <div id="comands_restaurant">
-                        <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">torna alla
+                        <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">Torna alla
                                 dashboard</a></button>
                     </div>
                 </div>
