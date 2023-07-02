@@ -45,21 +45,21 @@
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
+                                        {{ __('Ricordami') }}
                                     </label>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mb-4 row mb-0">
-                            <div class="col-md-8 offset-md-4">
+                            <div class="col-md-8 offset-md-4 d-flex align-items-center">
                                 <div id="comands_restaurant">
                                     <button type="submit" class="btn ms-btn mt-3">Login</button>
                                 </div>
 
                                 @if (Route::has('password.request'))
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
+                                    {{ __('Hai dimenticato la tua password?') }}
                                 </a>
                                 @endif
                             </div>
