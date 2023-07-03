@@ -144,4 +144,58 @@
 
         </div>
     </section>
+    <section class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <h5 class="fw-bold">Scarica l'app</h5>
+                    <ul class="list-unstyled">
+                        <li><a href=""><img src="{{ Vite::asset('resources/img/google-play-download.png') }}"
+                                    alt="google-play-download"></a>
+                        </li>
+                        <li class="mt-1"><a href=""><img
+                                    src="{{ Vite::asset('resources/img/appstore-download.png') }}"
+                                    alt="app-store-download"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                    <h5 class="fw-bold">Servizi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="">Chi Siamo</a></li>
+                        <li><a href="">Contatti</a></li>
+                        <li><a href="">Sei un ristorante</a></li>
+                        <li><a href="">Domande frequenti</a></li>
+                        <li><a href="">Lavora con noi</a></li>
+                        <li><a href="">Design</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                    <h5 class="fw-bold">Termini</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="">Termini di utilizzo</a></li>
+                        <li><a href="">Normativa sulla privacy e sui cookie</a></li>
+                        <li><a href="">Consenti i cookie</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Food For All Gift Card</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6">
+                    <h5 class="fw-bold">Social</h5>
+                    <p>Seguici su tutti i nostri canali Social</p>
+                    {{-- <ul class="social d-flex list-unstyled">
+                        <li class="me-2">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </li>
+                        <li class="me-2">
+                            <i class="fa-brands fa-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
+                    </ul> --}}
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
