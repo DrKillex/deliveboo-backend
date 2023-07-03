@@ -53,6 +53,13 @@
                         <input class="form-control" name="image" type="file" id="image"
                             value="{{ old('image', $product->image) }}">
                     </div>
+                    <div id="image_input_container" class="mb-3">
+                        <div class="preview-edit">
+                            <img id="file-image-preview"
+                                @if ($product->image) src="{{ asset(!str_starts_with($product->image, 'http') ? 'http://127.0.0.1:8000/storage/' . $product->image : $product->image) }}" alt="{{ $product->name }}" @endif>
+                        </div>
+                    </div>
+
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="gluten_free" id="gluten-free" value="1"
                             {{ old('gluten_free', $product->gluten_free) ? 'checked' : '' }}>
@@ -79,13 +86,7 @@
                     </div>
 
                     {{-- show image upload --}}
-                    <div id="image_input_container">
-                        <div class="preview-edit">
-                            <img id="file-image-preview"
-                                @if ($product->image) src="{{ asset(!str_starts_with($product->image, 'http') ? 'http://127.0.0.1:8000/storage/' . $product->image : $product->image) }}" alt="{{ $product->name }}" @endif>
-                        </div>
-                    </div>
-
+                   
                 </form>
             </div>
         </div>

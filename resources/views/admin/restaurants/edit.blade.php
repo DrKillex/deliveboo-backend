@@ -85,13 +85,16 @@
                         <input class="form-control" type="file" id="image" name="img"
                             value="{{ old('img', $restaurant->img) }}">
                     </div>
-                    {{-- Image Preview Upload --}}
+                     {{-- Image Preview Upload --}}
+                    <div>
+                        <img id="file-image-preview" class="img-fluid @if ($restaurant->img) mt-4 mb-3 @endif"
+                            @if ($restaurant->img) src="{{ asset(!str_starts_with($restaurant->img, 'http') ? 'http://127.0.0.1:8000/storage/' . $restaurant->img : $restaurant->img) }}" @endif>
+                    </div>
+                   
                     <div id="comands_restaurant">
                         <button type="submit" class="btn ms-btn mt-3">Modifica</button>
                     </div>
-                    <div>
-                        <img id="file-image-preview"  class="img-fluid @if($restaurant->img)mt-4 mb-3 @endif" @if($restaurant->img) src="{{ asset(!str_starts_with($restaurant->img, 'http')? 'http://127.0.0.1:8000/storage/'.$restaurant->img:$restaurant->img) }}" @endif>
-                    </div>
+                    
                 </form>
             </div>
         </div>
