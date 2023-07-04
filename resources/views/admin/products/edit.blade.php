@@ -55,7 +55,7 @@
                     </div>
                     <div id="image_input_container" class="mb-3">
                         <div class="preview-edit">
-                            <img id="file-image-preview"
+                            <img id="file-image-preview" style="width: 400px"
                                 @if ($product->image) src="{{ asset(!str_starts_with($product->image, 'http') ? 'http://127.0.0.1:8000/storage/' . $product->image : $product->image) }}" alt="{{ $product->name }}" @endif>
                         </div>
                     </div>

@@ -87,7 +87,7 @@
                     </div>
                      {{-- Image Preview Upload --}}
                     <div>
-                        <img id="file-image-preview" class="img-fluid @if ($restaurant->img) mt-4 mb-3 @endif"
+                        <img style="width: 400px" id="file-image-preview" class="img-fluid @if ($restaurant->img) mt-4 mb-3 @endif"
                             @if ($restaurant->img) src="{{ asset(!str_starts_with($restaurant->img, 'http') ? 'http://127.0.0.1:8000/storage/' . $restaurant->img : $restaurant->img) }}" @endif>
                     </div>
                    

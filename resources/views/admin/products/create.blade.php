@@ -78,7 +78,7 @@
 
                     {{-- Image Preview Upload --}}
                     <div class="preview">
-                        <img id="file-image-preview">
+                        <img id="file-image-preview" style="width: 400px">
                     </div>
                     <div id="comands_restaurant">
                         <button type="submit" class="btn ms-btn mt-3">Aggiungi</button>
