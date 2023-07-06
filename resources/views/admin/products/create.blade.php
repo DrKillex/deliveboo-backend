@@ -23,13 +23,13 @@
     </section>
     <section class="container">
         <div class="row mt-4">
-            <div class="col-3">
+            <div class="col-12 mx-auto col-sm-12 col-md-3 mb-4">
                 <div id="comands_restaurant">
                     <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">Torna alla
                             dashboard</a></button>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="col-12 mx-auto col-sm-12 col-md-9">
 
 
                 <form id="create-product" action="{{ route('admin.products.store') }}" method="POST"
@@ -54,27 +54,39 @@
                         <input class="form-control" name="image" type="file" id="image" value="{{ old('image') }}"
                             required>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="gluten_free" id="gluten-free" value="1"
-                            {{ old('gluten_free') ? 'checked' : '' }}>
-                        <label class="form-check-label" for="gluten_free">
-                            Gluten Free
-                        </label>
+                    <div class="gluten-free mb-3">
+                        <h4>Prodotto senza glutine</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="gluten_free" id="gluten-free"
+                                value="1" {{ old('gluten_free') ? 'checked' : '' }}>
+                            <label class="form-check-label" for="gluten_free">
+                                Gluten Free
+                            </label>
+                        </div>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="vegan" id="vegan" value="1"
-                            {{ old('vegan') ? 'checked' : '' }}>
-                        <label class="form-check-label" for="vegan">
-                            Vegan
-                        </label>
+
+                    <div class="vegan mb-3">
+                        <h4>Prodotto vegano</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="vegan" id="vegan" value="1"
+                                {{ old('vegan') ? 'checked' : '' }}>
+                            <label class="form-check-label" for="vegan">
+                                Vegan
+                            </label>
+                        </div>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="visible" id="visible" value="1"
-                            {{ old('visible') ? 'checked' : '' }}>
-                        <label class="form-check-label" for="visible">
-                            visible
-                        </label>
+
+                    <div class="visible mb-3">
+                        <h4>Visibilità prodotto Menù Ristorante</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="visible" id="visible" value="1"
+                                {{ old('visible') ? 'checked' : '' }}>
+                            <label class="form-check-label" for="visible">
+                                visible
+                            </label>
+                        </div>
                     </div>
+
 
                     {{-- Image Preview Upload --}}
                     <div class="preview">

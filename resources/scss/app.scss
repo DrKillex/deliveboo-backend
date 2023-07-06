@@ -17,6 +17,10 @@ body {
     max-width: 1200px;
 }
 
+.brand{
+    font-size: 25px;
+}
+
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
     display: none;
@@ -158,6 +162,12 @@ body {
     background-color: #FD7E03;
     color: white;
 
+    img{
+        object-fit: cover;
+        box-shadow: 0px 0px 16px 0px black;
+        border: 1px solid white;
+    }
+
     h2 {
         text-transform: uppercase;
     }
@@ -181,6 +191,12 @@ body {
 
 #section_products {
     background-color: white;
+
+    img{
+        border: 1px solid white;
+        object-fit: cover;
+        box-shadow: 0px 0px 16px 0px black;
+    }
 
     #pdt_name {
         color: black;
@@ -272,6 +288,14 @@ table {
 }
 
 @media (max-width: 768px) {
+    #title_restaurant{
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
     .navbar {
         display: block;
 
@@ -298,7 +322,16 @@ table {
             }
         }
     }
+    #main-products {
+        background-color: white;}
+        #comands_restaurant{
+            align-items: center !important;
 
+        }
+        #section-descr{
+            border: none;
+            background-color: white;
+        }
     .navbar-container input[type="checkbox"] {
         position: absolute;
         display: block;
@@ -349,7 +382,18 @@ table {
     }
 }
 
+// order Stats
+.accordion-item{
+    border: 1px solid rgb(221, 221, 221);
+    .accordion-button:not(.collapsed){
+        background-color: #FD7E03 !important;
+        color: white !important;
+    }
+    button:focus{
+        box-shadow: none !important;
 
+    }
+}
 // foooter 
 
 

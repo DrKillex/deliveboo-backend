@@ -22,13 +22,13 @@
     </section>
     <div class="container">
         <div class="row py-3">
-            <div class="col-3">
+            <div class="col-12 mx-auto col-sm-12 col-md-3 mb-4">
                 <div id="comands_restaurant">
-                    <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">torna alla
+                    <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">Torna alla
                             dashboard</a></button>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="col-12 mx-auto col-sm-12 col-md-9">
                 <form id="create-product" action="{{ route('admin.restaurants.update', $restaurant) }}" method="POST"
                     enctype="multipart/form-data" class="form-input-image">
                     @csrf

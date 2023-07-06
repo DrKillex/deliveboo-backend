@@ -11,7 +11,7 @@
     <div id="title_restaurant" class="py-3">
         <div class="container">
             <div class="row">
-                <h3 class="mt-3">Statistiche prodotti</h3>
+                <h3 class="mt-3 fw-bold">Statistiche prodotti</h3>
             </div>
         </div>
     </div>
@@ -23,17 +23,17 @@
     </div> --}}
     <div>
         <div class="container">
-            <div class="row mt-5">
+            <div class="row">
                 <div class="mt-3">
                     
                 </div>
-                <div class="col-2">
+                <div class="col-12 mx-auto col-sm-12 col-md-3 mb-4">
                     <div id="comands_restaurant">
                         <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.dashboard') }}">Torna alla
                                 dashboard</a></button>
                     </div>
                 </div>
-                <div class="col-10">
+                <div class="col-12 mx-auto col-sm-12 col-md-9">
                     <h4 class="px-5">Qui sarà possibile visualizzare la quantità per ogni prodotto ordinato.</h4>
                     <div>
                         <canvas id="myChart"></canvas>
