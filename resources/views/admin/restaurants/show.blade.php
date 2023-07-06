@@ -19,15 +19,15 @@
 
     <section id="title_restaurant" class="py-3">
         <div class="container">
-            <div class="row">
-                <div class="col-auto my-2 d-flex ">
-                    <div class="col-4">
-                        <img class="img-fluid rounded w-100"
+            <div class="row justify-content-center">
+                <div class="my-2 row justify-content-center">
+                    <div class="col-sm-12 col-md-4">
+                        <img class="img-fluid rounded w-100 mb-4"
                             src="{{ asset(!str_starts_with($restaurant->img, 'http') ? 'http://127.0.0.1:8000/storage/' . $restaurant->img : $restaurant->img) }}"
                             alt="{{ $restaurant->name }}">
 
                     </div>
-                    <div class="col-8">
+                    <div class="col-sm-12 col-md-8">
                         <h2 class="mx-4 fw-bold">{{ $restaurant->name }}</h2>
                         <p class="mx-4 fw-bold">{{ $restaurant->description }}</p>
                     </div>
@@ -37,47 +37,61 @@
     </section>
     <section id="section-descr">
         <div class="container">
-            <div class="row my-4">
-                <div>
-                    <h5>Qui avrai la paronamica del tuo ristorante. Da qui avrai la possibilità di modificare il prodotto o
-                        rimuoverlo, cambiare le info del tuo ristorante e tanto altro.</h5>
+            <div class="row mt-4">
+                <div class="text-center">
+                    <h3 class="fw-bold">Paronamica del tuo ristorante</h3>
+                    <p>
+                        Da qui avrai la possibilità di modificare il prodotto o
+                        rimuoverlo, cambiare le info del tuo ristorante e tanto altro.
+                    </p>
                 </div>
 
             </div>
         </div>
     </section>
-    <section id="main-products">
-        <div class="container py-3">
 
-            <div class="row back-products">
-                <div id="comands_restaurant" class="col-3 px-4 py-3 d-flex flex-column align-items-start gap-3">
+    {{-- main --}}
+    <main id="main-products">
+        <div class="container py-3">
+            <div class="titles d-flex justify-content-between">
+                {{-- <h3 class=" fw-bold text-white">Utility Buttons</h3>
+                <h3 class=" fw-bold text-md-white text-sm-black">Prodotti Ristorante</h3> --}}
+            </div>
+            <div class="row back-products d-flex justify-content-center">
+                {{-- bottoni comandi --}}
+                <div id="comands_restaurant"
+                    class="col-12 col-sm-12 col-md-3 px-4 py-3 d-flex flex-column align-items-start gap-3">
                     <div class="col-10">
                         <div>
-                            <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.products.create') }}">Nuovo
+                            <button class="btn ms-btn w-100"><a class="nav-link"
+                                    href="{{ route('admin.products.create') }}">Nuovo
                                     Prodotto</a></button>
                         </div>
                     </div>
                     <div class="col-10">
-                        <button class="btn ms-btn"><a class="nav-link"
+                        <button class="btn ms-btn w-100"><a class="nav-link"
                                 href="{{ route('admin.restaurants.edit', $restaurant) }}">Modifica Ristorante</a></button>
                     </div>
                     <div class="col-10">
-                        <button class="btn ms-btn"><a class="nav-link" href="{{ route('admin.orders.index') }}">Visualizza
+                        <button class="btn ms-btn w-100"><a class="nav-link"
+                                href="{{ route('admin.orders.index') }}">Visualizza
                                 Ordini</a></button>
                     </div>
                     <div class="col-10">
-                        <button id="test" class="btn ms-btn"><a class="nav-link"
+                        <button id="test" class="btn ms-btn w-100"><a class="nav-link"
                                 href="{{ route('admin.orders.charts') }}">Statistiche Prodotti</a></button>
                     </div>
                 </div>
+                {{-- /bottoni comandi --}}
 
-                <div id="section_products" class="col-9">
+                {{-- prodotti --}}
+                <div id="section_products" class="col-9 py-3 justify-content-center d-flex">
                     <div class="row gy-5 py-3">
                         @foreach ($products as $product)
-                            <div class="col-4">
-
-                                <div class="card ms-card h-100 mx-3 my-2 d-flex">
-                                    <div>
+                            <div class="col-sm-12 col-md-4">
+                                {{-- cards prodotti --}}
+                                <div class="card ms-card h-100 mx-3 my-2 d-flex flex-wrap">
+                                    <div class="d-flex justify-content-center">
                                         <img class="img-fluid ms-img"
                                             src="{{ asset(!str_starts_with($product->image, 'http') ? 'http://127.0.0.1:8000/storage/' . $product->image : $product->image) }}"
                                             alt="{{ $product->name }}">
@@ -102,6 +116,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- cards prodotti --}}
+
                             </div>
 
                             {{-- pop up warning message --}}
@@ -139,12 +155,17 @@
                         @endforeach
                     </div>
                 </div>
+                {{-- /prodotti --}}
+
             </div>
 
 
         </div>
-    </section>
-    <section class="footer py-5">
+    </main>
+    {{-- /main --}}
+
+    {{-- footer --}}
+    <footer class="footer py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-6">
@@ -197,5 +218,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+    {{-- /footer --}}
 @endsection

@@ -1,88 +1,110 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
-        <title>@yield('page_title', 'Food For All-Admin')</title>
+    {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
+    <title>@yield('page_title', 'Food For All - Admin')</title>
 
-        <!-- Fonts -->
-        <link rel="dns-prefetch" href="//fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ Vite::asset('resources/img/logo.png') }}">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- /favicon -->
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-        <!-- Usando Vite -->
-        @vite(['resources/js/app.js'])
-    </head>
+    <!-- Usando Vite -->
+    @vite(['resources/js/app.js'])
+</head>
 
-    <body>
-        <div id="app">
-                <!-- navbar -->
-                <nav class="navbar container-fluid py-1">
-                    <div class="navbar-container container align-items-center px-0">
-                        <!-- hamburger menu -->
-                        <input type="checkbox" name="hamburger_icon" id="hamburger_icon">
-                        <div class="hamburger-lines mx-3">
-                            <span class="line line1"></span>
-                            <span class="line line2"></span>
-                            <span class="line line3"></span>
-                        </div>
-                        <!-- /hamburger menu -->
-                        <!-- navbar collegamenti -->
-                        <ul class="navbar-links d-flex align-items-center">
-                            <!-- Right Side Of Navbar -->
-                            <!-- Authentication Links -->
-                             @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
+<body>
+    <div id="app">
+        <!-- navbar -->
+        <nav class="navbar container-fluid py-1">
+            <div class="navbar-container container align-items-center px-0">
+                <!-- hamburger menu -->
+                <input type="checkbox" name="hamburger_icon" id="hamburger_icon">
+                <div class="hamburger-lines mx-3">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <!-- /hamburger menu -->
+                <!-- navbar collegamenti -->
+                <ul class="navbar-links d-flex align-items-center">
+                    <!-- Right Side Of Navbar -->
+                    <!-- Authentication Links -->
+                    @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                        @if (Route::has('register'))
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Registrati') }}</a>
                             </li>
-                            @endif
-                            @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                        @endif
+                    @else
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }}
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
+                                {{-- <a class="dropdown-item" href="{{ url('profile') }}">{{__('Profile')}}</a> --}}
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{__('Dashboard')}}</a>
-                                    {{-- <a class="dropdown-item" href="{{ url('profile') }}">{{__('Profile')}}</a> --}}
-                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                        document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                    @endguest
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                            @endguest
-                            
-                        </ul>
-                        <div class="logo d-flex align-items-center mx-3">
-                            <a href="http://localhost:5173/" class="d-flex text-decoration-none">
-                                <img src="https://cdn.discordapp.com/attachments/1120303634509484046/1123555746026639400/logo.png" alt="Logo" width="100" class="d-inline-block align-text-top">
-                                <h1 class="mb-0 fs-3 fw-bold">FOOD FOR ALL</h1>
-                            </a>
-                           
-                        </div>
-                        <!-- /navbar collegamenti -->
-                    </div>
-                </nav>
-                <!-- /navbar -->
+                </ul>
+                <div class="logo d-flex align-items-center mx-3">
+                    <a href="http://localhost:5174/" class="d-flex text-decoration-none">
+                        <img src="{{ Vite::asset('resources/img/logo.png') }}"
+                            alt="Logo" width="100" class="d-inline-block align-text-top">
+                        <h1 class="mb-0 brand fw-bold d-none d-sm-flex">FOOD FOR ALL - ADMIN</h1>
+                    </a>
 
-{{-- 
+                </div>
+                <!-- /navbar collegamenti -->
+            </div>
+        </nav>
+        <!-- /navbar -->
+
+        {{-- 
             <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
                 <div class="container">
                     <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
@@ -93,25 +115,25 @@
                                 </g>
                             </svg>
                         </div> --}}
-                        {{-- Riga già commentata config('app.name', 'Laravel') --}}
-                    {{-- </a>
+        {{-- Riga già commentata config('app.name', 'Laravel') --}}
+        {{-- </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent"> --}}
-                        <!-- Left Side Of Navbar -->
-                        {{-- <ul class="navbar-nav me-auto">
+        <!-- Left Side Of Navbar -->
+        {{-- <ul class="navbar-nav me-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="http://localhost:5174/">{{ __('Home') }}</a>
                             </li>
                         </ul> --}}
 
-                        <!-- Right Side Of Navbar -->
-                        {{-- <ul class="navbar-nav ms-auto"> --}}
-                            <!-- Authentication Links -->
-                            {{-- @guest
+        <!-- Right Side Of Navbar -->
+        {{-- <ul class="navbar-nav ms-auto"> --}}
+        <!-- Authentication Links -->
+        {{-- @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
@@ -145,10 +167,10 @@
                 </div>
             </nav> --}}
 
-            <main class="">
-                @yield('content')
-            </main>
-        </div>
-    </body>
+        <main class="">
+            @yield('content')
+        </main>
+    </div>
+</body>
 
 </html>
