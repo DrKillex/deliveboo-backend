@@ -45,7 +45,7 @@
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#{{ $loop->index }}" aria-expanded="false"
-                                            aria-controls="{{ $loop->index }}"> Ordine n.{{ $order->id }}|
+                                            aria-controls="{{ $loop->index }}">
                                             Data Ordine: {{ $order->created_at }}| Totale Ordine: {{ $order->total_price }}€|
                                             {{ $order->payment_state == 0 ? 'Pagamento ❌' : 'Pagato con Successo ✔' }}
                                         </button>
